@@ -1,0 +1,8 @@
+name: Projeto Maker X
+media:
+  img|../content/projeto_maker_x/img1.jpg
+  img|../content/projeto_maker_x/img2.png
+  yt|https://www.youtube.com/watch?v=abc123
+  yt|https://youtu.be/xyz456
+description: >
+  Este projeto foi desenvolvido para ensinar conceitos básicos de robótica, incluindo montagem, sensores e programação.

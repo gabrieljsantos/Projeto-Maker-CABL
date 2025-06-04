@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos Maker</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    header, footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      padding: 20px;
+      display: grid;
+      gap: 24px;
+    }
+
+    .project-card {
+      background-color: #1f1f1f;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    }
+
+    .project-title {
+      font-size: 20px;
+      margin-bottom: 12px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .carousel-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .carousel img, .carousel iframe {
+      max-width: 100%;
+      max-height: 400px;
+      border: none;
+    }
+
+    .project-description {
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projetos Maker CABL</h1>
+  </header>
+  <main id="projects"></main>
+  <footer>
+    <p>&copy; 2025 Gabriel J Santos</p>
+  </footer>
+
+  <script>
+    async function loadProjects() {
+      const container = document.getElementById("projects");
+
+      try {
+        const response = await fetch("master.dat");
+        const projectList = await response.text();
+        const projectNames = projectList.split("\n").map(l => l.trim()).filter(l => l);
+
+        for (const projectName of projectNames) {
+          const infPath = `content/${projectName}/inf.dat`;
+
+          try {
+            const infResponse = await fetch(infPath);
+            const text = await infResponse.text();
+            const lines = text.split(/\r?\n/);
+            const title = lines[0].trim();
+            const mediaItems = [];
+            let description = "";
+            let section = "media";
+
+            for (let i = 1; i < lines.length; i++) {
+              const line = lines[i].trim();
+              if (!line) continue;
+              if (/^descrição/i.test(line)) {
+                section = "desc";
+                continue;
+              }
+              if (section === "media") mediaItems.push(line);
+              else description += line + "\n";
+            }
+
+            const card = document.createElement("div");
+            card.className = "project-card";
+
+            const titleEl = document.createElement("div");
+            titleEl.className = "project-title";
+            titleEl.textContent = title;
+
+            const carouselContainer = document.createElement("div");
+            carouselContainer.className = "carousel-container";
+
+            const carousel = document.createElement("div");
+            carousel.className = "carousel";
+
+            mediaItems.forEach(item => {
+              const el = document.createElement("div");
+              el.className = "carousel-item";
+              if (item.includes("youtube")) {
+                const iframe = document.createElement("iframe");
+                iframe.src = item;
+                iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                iframe.allowFullscreen = true;
+                el.appendChild(iframe);
+              } else {
+                const img = document.createElement("img");
+                img.src = item;
+                el.appendChild(img);
+              }
+              carousel.appendChild(el);
+            });
+
+            let index = 0;
+            const interval = setInterval(() => {
+              if (!carouselContainer.matches(":hover")) {
+                index = (index + 1) % mediaItems.length;
+                carousel.style.transform = `translateX(-${index * 100}%)`;
+              }
+            }, 4000);
+
+            carouselContainer.appendChild(carousel);
+
+            const descEl = document.createElement("div");
+            descEl.className = "project-description";
+            descEl.textContent = description.trim();
+
+            card.appendChild(titleEl);
+            if (mediaItems.length) card.appendChild(carouselContainer);
+            if (description.trim()) card.appendChild(descEl);
+
+            container.appendChild(card);
+
+          } catch (err) {
+            console.warn(`Erro ao carregar projeto ${projectName}:`, err);
+          }
+        }
+
+      } catch (err) {
+        console.error("Erro ao carregar master.dat:", err);
+      }
+    }
+
+    window.onload = loadProjects;
+  </script>
+</body>
+</html>
