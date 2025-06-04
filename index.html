@@ -85,117 +85,116 @@
     <p>&copy; 2025 Gabriel J Santos</p>
   </footer>
 
-  <script>
-    async function loadProjects() {
-      const container = document.getElementById("projects");
+<script>
+  async function loadProjects() {
+    const container = document.getElementById("projects");
 
-      try {
-        const response = await fetch("master.dat");
-        const projectList = await response.text();
-        const projectNames = projectList.split("\n").map(l => l.trim()).filter(l => l);
+    try {
+      const response = await fetch("master.dat");
+      const projectNames = (await response.text())
+        .split("\n")
+        .map(l => l.trim())
+        .filter(l => l);
 
-        for (const projectName of projectNames) {
-          const infPath = `content/${projectName}/inf.dat`;
+      for (const projectName of projectNames) {
+        const infPath = `content/${projectName}/inf.dat`;
 
-          try {
-            const infResponse = await fetch(infPath);
-            const text = await infResponse.text();
-            const lines = text.split(/\r?\n/);
-            const title = lines[0].trim();
-            const mediaItems = [];
-            let description = "";
-            let section = "media";
+        try {
+          const infResponse = await fetch(infPath);
+          const lines = (await infResponse.text()).split(/\r?\n/);
+          const title = lines[0].trim();
+          const mediaItems = [];
+          let description = "";
+          let section = "media";
 
-            for (let i = 1; i < lines.length; i++) {
-              const line = lines[i].trim();
-              if (!line) continue;
-              if (/^descrição/i.test(line)) {
-                section = "desc";
-                continue;
-              }
-              if (section === "media") mediaItems.push(line);
-              else description += line + "\n";
+          for (let i = 1; i < lines.length; i++) {
+            const line = lines[i].trim();
+            if (!line) continue;
+            if (/^descrição/i.test(line)) {
+              section = "desc";
+              continue;
             }
-
-            const card = document.createElement("div");
-            card.className = "project-card";
-
-            const titleEl = document.createElement("div");
-            titleEl.className = "project-title";
-            titleEl.textContent = title;
-            card.appendChild(titleEl);
-
-            if (mediaItems.length) {
-              const carouselContainer = document.createElement("div");
-              carouselContainer.className = "carousel-container";
-
-              const carousel = document.createElement("div");
-              carousel.className = "carousel";
-
-              mediaItems.forEach(item => {
-                const el = document.createElement("div");
-                el.className = "carousel-item";
-                if (item.includes("youtube.com") || item.includes("youtu.be")) {
-                  let videoId = "";
-                  if (item.includes("youtube.com/watch")) {
-                    const url = new URL(item);
-                    videoId = url.searchParams.get("v");
-                  } else if (item.includes("youtu.be")) {
-                    videoId = item.split("/").pop();
-                  } else if (item.includes("youtube.com/shorts")) {
-                    videoId = item.split("/").pop();
-                  }
-
-                  if (videoId) {
-                    const thumbUrl = `https://img.youtube.com/vi/${videoId}/0.jpg`;
-                    const link = document.createElement("a");
-                    link.href = `https://www.youtube.com/watch?v=${videoId}`;
-                    link.target = "_blank";
-                    const img = document.createElement("img");
-                    img.src = thumbUrl;
-                    img.alt = "Vídeo do YouTube";
-                    link.appendChild(img);
-                    el.appendChild(link);
-                  }
-                } else {
-                  const img = document.createElement("img");
-                  img.src = item;
-                  el.appendChild(img);
-                }
-                carousel.appendChild(el);
-              });
-              let index = 0;
-              setInterval(() => {
-                if (!carouselContainer.matches(":hover")) {
-                  index = (index + 1) % mediaItems.length;
-                  carousel.style.transform = `translateX(-${index * 100}%)`;
-                }
-              }, 4000);
-
-              carouselContainer.appendChild(carousel);
-              card.appendChild(carouselContainer);
-            }
-
-            if (description.trim()) {
-              const descEl = document.createElement("div");
-              descEl.className = "project-description";
-              descEl.textContent = description.trim();
-              card.appendChild(descEl);
-            }
-
-            container.appendChild(card);
-
-          } catch (err) {
-            console.warn(`Erro ao carregar projeto ${projectName}:`, err);
+            if (section === "media") mediaItems.push(line);
+            else description += line + "\n";
           }
+
+          const card = document.createElement("div");
+          card.className = "project-card";
+
+          const titleEl = document.createElement("div");
+          titleEl.className = "project-title";
+          titleEl.textContent = title;
+          card.appendChild(titleEl);
+
+          if (mediaItems.length) {
+            const carouselContainer = document.createElement("div");
+            carouselContainer.className = "carousel-container";
+
+            const carousel = document.createElement("div");
+            carousel.className = "carousel";
+
+            mediaItems.forEach(item => {
+              const el = document.createElement("div");
+              el.className = "carousel-item";
+              if (item.includes("youtube.com") || item.includes("youtu.be")) {
+                let videoId = "";
+                if (item.includes("youtube.com/watch")) {
+                  const url = new URL(item);
+                  videoId = url.searchParams.get("v");
+                } else if (item.includes("youtu.be")) {
+                  videoId = item.split("/").pop();
+                } else if (item.includes("youtube.com/shorts")) {
+                  videoId = item.split("/").pop();
+                }
+
+                if (videoId) {
+                  const thumbUrl = `https://img.youtube.com/vi/${videoId}/0.jpg`;
+                  const link = document.createElement("a");
+                  link.href = `https://www.youtube.com/watch?v=${videoId}`;
+                  link.target = "_blank";
+                  const img = document.createElement("img");
+                  img.src = thumbUrl;
+                  img.alt = "Vídeo do YouTube";
+                  link.appendChild(img);
+                  el.appendChild(link);
+                }
+              } else {
+                const img = document.createElement("img");
+                img.src = item;
+                el.appendChild(img);
+              }
+              carousel.appendChild(el);
+            });
+
+            let index = 0;
+            setInterval(() => {
+              index = (index + 1) % mediaItems.length;
+              carousel.style.transform = `translateX(-${index * 100}%)`;
+            }, 4000);
+
+            carouselContainer.appendChild(carousel);
+            card.appendChild(carouselContainer);
+          }
+
+          if (description.trim()) {
+            const descEl = document.createElement("div");
+            descEl.className = "project-description";
+            descEl.textContent = description.trim();
+            card.appendChild(descEl);
+          }
+
+          container.appendChild(card);
+        } catch (err) {
+          console.warn(`Erro ao carregar projeto ${projectName}:`, err);
         }
-
-      } catch (err) {
-        console.error("Erro ao carregar master.dat:", err);
       }
+    } catch (err) {
+      console.error("Erro ao carregar master.dat:", err);
     }
+  }
 
-    window.onload = loadProjects;
-  </script>
+  window.onload = loadProjects;
+</script>
+
 </body>
 </html>
