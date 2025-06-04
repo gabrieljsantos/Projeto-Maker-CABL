@@ -29,6 +29,11 @@
       padding: 16px;
       border-radius: 10px;
       box-shadow: 0 0 8px rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      align-items: flex-start;
+      flex-wrap: wrap;
     }
 
     .project-title {
@@ -36,11 +41,14 @@
       margin-bottom: 12px;
       font-weight: bold;
       color: #ffffff;
+      width: 100%;
     }
 
     .carousel-container {
       position: relative;
       overflow: hidden;
+      flex: 1 1 300px;
+      max-width: 400px;
     }
 
     .carousel {
@@ -61,8 +69,10 @@
     }
 
     .project-description {
-      margin-top: 12px;
+      flex: 1 1 300px;
       line-height: 1.6;
+      text-align: justify;
+      white-space: pre-line;
     }
   </style>
 </head>
@@ -113,47 +123,65 @@
             const titleEl = document.createElement("div");
             titleEl.className = "project-title";
             titleEl.textContent = title;
-
-            const carouselContainer = document.createElement("div");
-            carouselContainer.className = "carousel-container";
-
-            const carousel = document.createElement("div");
-            carousel.className = "carousel";
-
-            mediaItems.forEach(item => {
-              const el = document.createElement("div");
-              el.className = "carousel-item";
-              if (item.includes("youtube")) {
-                const iframe = document.createElement("iframe");
-                iframe.src = item;
-                iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-                iframe.allowFullscreen = true;
-                el.appendChild(iframe);
-              } else {
-                const img = document.createElement("img");
-                img.src = item;
-                el.appendChild(img);
-              }
-              carousel.appendChild(el);
-            });
-
-            let index = 0;
-            const interval = setInterval(() => {
-              if (!carouselContainer.matches(":hover")) {
-                index = (index + 1) % mediaItems.length;
-                carousel.style.transform = `translateX(-${index * 100}%)`;
-              }
-            }, 4000);
-
-            carouselContainer.appendChild(carousel);
-
-            const descEl = document.createElement("div");
-            descEl.className = "project-description";
-            descEl.textContent = description.trim();
-
             card.appendChild(titleEl);
-            if (mediaItems.length) card.appendChild(carouselContainer);
-            if (description.trim()) card.appendChild(descEl);
+
+            if (mediaItems.length) {
+              const carouselContainer = document.createElement("div");
+              carouselContainer.className = "carousel-container";
+
+              const carousel = document.createElement("div");
+              carousel.className = "carousel";
+
+              mediaItems.forEach(item => {
+                const el = document.createElement("div");
+                el.className = "carousel-item";
+                if (item.includes("youtube.com") || item.includes("youtu.be")) {
+                  let videoId = "";
+                  if (item.includes("youtube.com/watch")) {
+                    const url = new URL(item);
+                    videoId = url.searchParams.get("v");
+                  } else if (item.includes("youtu.be")) {
+                    videoId = item.split("/").pop();
+                  } else if (item.includes("youtube.com/shorts")) {
+                    videoId = item.split("/").pop();
+                  }
+
+                  if (videoId) {
+                    const thumbUrl = `https://img.youtube.com/vi/${videoId}/0.jpg`;
+                    const link = document.createElement("a");
+                    link.href = `https://www.youtube.com/watch?v=${videoId}`;
+                    link.target = "_blank";
+                    const img = document.createElement("img");
+                    img.src = thumbUrl;
+                    img.alt = "Vídeo do YouTube";
+                    link.appendChild(img);
+                    el.appendChild(link);
+                  }
+                } else {
+                  const img = document.createElement("img");
+                  img.src = item;
+                  el.appendChild(img);
+                }
+                carousel.appendChild(el);
+              });
+              let index = 0;
+              setInterval(() => {
+                if (!carouselContainer.matches(":hover")) {
+                  index = (index + 1) % mediaItems.length;
+                  carousel.style.transform = `translateX(-${index * 100}%)`;
+                }
+              }, 4000);
+
+              carouselContainer.appendChild(carousel);
+              card.appendChild(carouselContainer);
+            }
+
+            if (description.trim()) {
+              const descEl = document.createElement("div");
+              descEl.className = "project-description";
+              descEl.textContent = description.trim();
+              card.appendChild(descEl);
+            }
 
             container.appendChild(card);
 
