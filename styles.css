@@ -1,0 +1,612 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Header com imagem */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #3a86ff, #06ffa5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(58, 134, 255, 0.3);
+}
+
+.header-image {
+  flex-shrink: 0;
+  margin-left: 2rem;
+}
+
+.header-image img {
+  max-height: 80px;
+  width: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.header-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Seção sobre a instituição */
+.institution-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #242424 100%);
+  padding: 3rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.institution-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.institution-content {
+  flex: 1;
+}
+
+.institution-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #06ffa5, #3a86ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 1.5rem 0;
+}
+
+.institution-description {
+  font-size: 1.1rem;
+  color: #d0d0d0;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.institution-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.institution-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #06ffa5 0%, #3a86ff 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(6, 255, 165, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.institution-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.institution-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(6, 255, 165, 0.4);
+}
+
+.institution-link:hover::before {
+  left: 100%;
+}
+
+.institution-image {
+  flex-shrink: 0;
+  width: 300px;
+}
+
+.institution-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.institution-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Info cards */
+.card-informacoes {
+  background: linear-gradient(145deg, #1f1f1f 0%, #2a2a2a 100%);
+  border-radius: 16px;
+  margin: 2rem auto;
+  max-width: 1400px;
+  padding: 0;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+
+.info-header {
+  background: linear-gradient(135deg, rgba(58, 134, 255, 0.15) 0%, rgba(6, 255, 165, 0.15) 100%);
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.info-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.info-body {
+  padding: 2rem;
+}
+
+.info-body p {
+  color: #d0d0d0;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.info-col {
+  background: rgba(255,255,255,0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.info-col label {
+  display: block;
+  color: #3a86ff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.info-col span {
+  color: #fff;
+  font-size: 1rem;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.loading::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-top: 2px solid #3a86ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.project-card {
+  background: linear-gradient(145deg, #1f1f1f 0%, #2a2a2a 100%);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 
+    0 8px 32px rgba(0,0,0,0.4),
+    0 0 0 1px rgba(255,255,255,0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 16px 48px rgba(0,0,0,0.5),
+    0 0 0 1px rgba(255,255,255,0.1);
+}
+
+.project-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, rgba(58, 134, 255, 0.1) 0%, rgba(6, 255, 165, 0.1) 100%);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin: 0;
+}
+
+.content-wrapper {
+  padding: 2rem;
+}
+
+.carousel-container {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  width: 400px;
+  aspect-ratio: 16 / 9;
+  float: left;
+  margin: 0 2rem 1rem 0;
+  shape-outside: margin-box;
+}
+
+.carousel-blur-bg {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(20px) brightness(0.3);
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.carousel {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-item a::after {
+  content: '▶';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 0 20px rgba(0,0,0,0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.carousel-item a:hover::after {
+  opacity: 1;
+}
+
+.carousel-item a:hover img {
+  transform: scale(1.05);
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 3;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: #3a86ff;
+  transform: scale(1.2);
+}
+
+.text-content {
+  /* Para o texto fluir ao redor do carrossel */
+  overflow: hidden; /* garante que o container englobe o conteúdo flutuante */
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.carousel-container {
+  float: left; /* Faz o carrossel ficar "flutuando" à esquerda do texto */
+  width: 600px; /* largura fixa ou máxima do carrossel */
+  margin-right: 20px; /* espaço entre carrossel e texto */
+  margin-bottom: 10px; /* para dar espaçamento quando o texto for para baixo */
+  box-sizing: border-box;
+}
+
+/* O texto ficará naturalmente do lado direito do carrossel,
+   e quando for longo, quebrará para baixo. */
+.project-description {
+  /* sem float aqui, ocupa o resto do espaço à direita */
+  text-align: justify;
+}
+
+/* Para telas pequenas, podemos fazer o carrossel ficar em cima do texto */
+@media (max-width: 600px) {
+  .carousel-container {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  clear: both; /* Garante que os botões fiquem abaixo do float */
+  padding-top: 1rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #3a86ff 0%, #06ffa5 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(58, 134, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(58, 134, 255, 0.4);
+}
+
+.project-link:hover::before {
+  left: 100%;
+}
+
+.project-link:active {
+  transform: translateY(0);
+}
+
+.error-message {
+  background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Layouts responsivos melhorados */
+@media (max-width: 1200px) {
+  .carousel-container {
+    width: 350px;
+    margin-right: 1.5rem;
+  }
+  
+  .institution-container {
+    gap: 2rem;
+  }
+  
+  .institution-image {
+    width: 250px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .header-image {
+    margin-left: 0;
+  }
+  
+  .institution-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .institution-image {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .carousel-container {
+    float: none;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 1.5rem auto;
+    display: block;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .content-wrapper {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+  
+  .institution-section {
+    padding: 2rem 1rem;
+  }
+  
+  header {
+    padding: 1.5rem;
+  }
+  
+  .header-text h1 {
+    font-size: 2rem;
+  }
+  
+  .institution-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .project-title {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+  
+  .content-wrapper {
+    padding: 1rem;
+  }
+  
+  .links-container, .institution-links {
+    justify-content: center;
+  }
+}
+
+/* Animação de entrada escalonada */
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(4) { animation-delay: 0.4s; }
+.project-card:nth-child(5) { animation-delay: 0.5s; }
+
+footer {
+  background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #888;
+}

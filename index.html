@@ -4,403 +4,90 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projetos Maker</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #fff;
-    }
-
-    header, footer {
-      background-color: #1e1e1e;
-      text-align: center;
-      padding: 20px;
-    }
-
-    main {
-      padding: 20px;
-      display: grid;
-      gap: 24px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .project-card {
-      background-color: #1f1f1f;
-      padding: 16px;
-      border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.6);
-      max-width: 90vw;
-      margin: 0 auto;
-
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      transition: max-width 0.3s ease;
-    }
-
-    .project-title {
-      font-size: 20px;
-      font-weight: bold;
-      color: #fff;
-      text-align: center;
-      width: 100%;
-      margin-bottom: 12px;
-    }
-
-    .content-row {
-      display: flex;
-      gap: 16px;
-      width: 100%;
-      flex-wrap: nowrap;
-      align-items: flex-start;
-      position: relative;
-      transition: flex-direction 0.3s ease;
-    }
-
-    .carousel-container {
-      position: relative;
-      overflow: hidden;
-      background-color: #000;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      max-width: 640px;
-      aspect-ratio: 16 / 9;
-      width: auto;
-      flex-shrink: 0;
-      flex-grow: 0;
-    }
-
-    .carousel-blur-bg {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      filter: blur(20px);
-      transform: scale(1.1);
-      opacity: 0.35;
-      z-index: 0;
-      border-radius: 8px;
-    }
-
-    .carousel {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-      width: 100%;
-      height: 100%;
-      position: relative;
-      z-index: 1;
-    }
-
-    .carousel-item {
-      min-width: 100%;
-      height: 100%;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .carousel img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      background-color: #000;
-      border-radius: 4px;
-    }
-
-    .text-container {
-      position: relative;
-      flex-grow: 1;
-      flex-shrink: 1;
-      min-width: 280px;
-      max-width: calc(100% - 640px - 16px);
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      overflow-wrap: break-word;
-    }
-
-    .links-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px; /* fica após o texto */
-      max-width: 100%;
-    }
-
-    .links-container a {
-      padding: 8px 16px;
-      background-color: #3a86ff;
-      color: #fff;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-      user-select: none;
-      white-space: nowrap;
-    }
-
-    .links-container a:hover {
-      background-color: #265dca;
-    }
-
-    .project-description {
-      line-height: 1.6;
-      white-space: pre-line;
-      text-align: justify;
-    }
-
-    /* Layout quando texto grande: coluna, texto abaixo da imagem */
-    .below-text {
-      flex-direction: column !important;
-    }
-
-    /* Quando texto grande, ajustar max-width do card para largura da imagem */
-    .project-card.narrow-width {
-      max-width: 640px !important;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    @media (max-width: 768px) {
-      .content-row {
-        flex-direction: column !important;
-      }
-      .text-container {
-        max-width: 100% !important;
-        min-width: auto !important;
-      }
-      .carousel-container {
-        max-width: 100% !important;
-        aspect-ratio: auto !important;
-        width: 100% !important;
-      }
-      .project-card.narrow-width {
-        max-width: 100% !important;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header com imagem -->
   <header>
-    <h1>Projetos Maker CABL</h1>
+    <div class="header-content">
+      <div class="header-text">
+        <h1>Projetos Maker CABL</h1>
+      </div>
+      <div class="header-image">
+        <img src="imgs/logo_cabl.png" alt="Logo CABL">
+      </div>
+    </div>
   </header>
-  <main id="projects"></main>
+
+  <!-- Seção sobre a instituição -->
+  <section class="institution-section">
+    <div class="institution-container">
+      <div class="institution-content">
+        <h2>Sobre o CABL</h2>
+        <p class="institution-description">
+          O Colégio Antônio Barreto de Lima (CABL) é ....
+        <p class="institution-description">
+          O projeto está dividido em várias etapas. Primeiramente, concentramo-nos na preparação para um letramento tecnológico abrangente, desde a familiarização com o computador até o seu manuseio. Inicialmente, foram abordados conceitos básicos, culminando na introdução à lógica de programação e à programação em blocos. As principais competências adquiridas pelos alunos incluem: navegação na internet, compreensão básica de lógica de programação, uso da impressora 3D, modelagem 3D, princípios do movimento maker, montagem de circuitos simples (incluindo conexões com fios, contatos e interruptores). Além disso, é enfatizada a capacidade dos alunos de analisar problemas e propor soluções engenhosas utilizando os materiais disponíveis em sala de aula. Na segunda parte do projeto, os alunos não apenas desenvolvem suas ideias, mas também as executam.
+          <br>
+          <br>
+          Em seguida, serão apresentados todos os trabalhos realizados, desenvolvidos pelos alunos e professores envolvidos no projeto. Alguns desses projetos carregam um toque especial - você sabe do que estou falando, não é? Sim, das imperfeições, dos borrões, do carinho, do cuidado ingênuo e da sinceridade que só uma criança consegue imprimir em algo feito por ela. Por isso, sinto um imenso orgulho em participar desta etapa da vida de meus alunos, ajudando-os a construir algo verdadeiramente significativo.
+        </p>
+        <div class="institution-links">
+          <a href="https://www.cabl.edu.br" class="institution-link" target="_blank">Site Oficial</a>
+          <a href="https://www.instagram.com/cabl_oficial" class="institution-link" target="_blank">Instagram</a>
+          <a href="mailto:contato@cabl.edu.br" class="institution-link">Contato</a>
+          <a href="https://github.com/cabl-projetos" class="institution-link" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="institution-image">
+        <img src="imgs/cabl-instituicao.jpg" alt="Instalações do CABL">
+      </div>
+    </div>
+  </section>
+
+  <!-- Card de informações -->
+  <div class="card-informacoes">
+    <div class="info-header">
+      <h3>Informações dos Projetos</h3>
+    </div>
+    <div class="info-body">
+      <p>Esta plataforma apresenta uma coleção dos principais projetos desenvolvidos pelos estudantes e professores do CABL. Cada projeto representa horas de dedicação, aprendizado e inovação.</p>
+      <div class="info-grid">
+        <div class="info-col">
+          <label>Total de Projetos:</label>
+          <span id="total-projects">Carregando...</span>
+        </div>
+        <div class="info-col">
+          <label>Áreas de Atuação:</label>
+          <span>Tecnologia, Educação, Inovação</span>
+        </div>
+        <div class="info-col">
+          <label>Última Atualização:</label>
+          <span id="last-update">2025</span>
+        </div>
+        <div class="info-col">
+          <label>Status:</label>
+          <span>Ativo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="projects">
+    <div class="loading">Carregando projetos...</div>
+  </main>
+  
   <footer>
-    <p>&copy; 2025 Gabriel J Santos</p>
+    <p>&copy; 2025 Gabriel J Santos - CABL</p>
   </footer>
 
+  <script src="projectLoader.js"></script>
   <script>
-    async function loadProjects() {
-      const container = document.getElementById("projects");
-
-      try {
-        const response = await fetch("master.dat");
-        const projectNames = (await response.text())
-          .split("\n")
-          .map(l => l.trim())
-          .filter(l => l);
-
-        for (const projectName of projectNames) {
-          const infPath = `content/${projectName}/inf.dat`;
-
-          try {
-            const infResponse = await fetch(infPath);
-            const lines = (await infResponse.text()).split(/\r?\n/);
-            const title = lines[0].trim();
-
-            const mediaItems = [];
-            let description = "";
-            const linkButtons = [];
-            let section = "media";
-
-            for (let i = 1; i < lines.length; i++) {
-              const line = lines[i].trim();
-              if (!line) continue;
-
-              if (/^descrição/i.test(line)) {
-                section = "desc";
-                continue;
-              }
-
-              if (line.startsWith("LINK|")) {
-                const match = line.match(/^LINK\|"(.*)"\|(.*)$/);
-                if (match) {
-                  const buttonName = match[1];
-                  const buttonUrl = match[2];
-                  linkButtons.push({ name: buttonName, url: buttonUrl });
-                }
-                continue;
-              }
-
-              if (section === "media") {
-                mediaItems.push(line);
-              } else {
-                description += line + "\n";
-              }
-            }
-
-            // Criar card
-            const card = document.createElement("div");
-            card.className = "project-card";
-
-            // Título
-            const titleEl = document.createElement("div");
-            titleEl.className = "project-title";
-            titleEl.textContent = title;
-            card.appendChild(titleEl);
-
-            // Container linha com carrossel e texto
-            const contentRow = document.createElement("div");
-            contentRow.className = "content-row";
-
-            // Carrossel com fundo desfocado
-            let carouselContainer = null;
-            if (mediaItems.length) {
-              carouselContainer = document.createElement("div");
-              carouselContainer.className = "carousel-container";
-
-              // Fundo desfocado - usa a primeira imagem do carrossel
-              const blurBg = document.createElement("div");
-              blurBg.className = "carousel-blur-bg";
-
-              let bgImage = "";
-              const firstItem = mediaItems[0];
-              if (firstItem.includes("youtube.com") || firstItem.includes("youtu.be")) {
-                let videoId = "";
-                if (firstItem.includes("youtube.com/watch")) {
-                  const url = new URL(firstItem);
-                  videoId = url.searchParams.get("v");
-                } else if (firstItem.includes("youtu.be")) {
-                  videoId = firstItem.split("/").pop();
-                } else if (firstItem.includes("youtube.com/shorts")) {
-                  videoId = firstItem.split("/").pop();
-                }
-                if (videoId) {
-                  bgImage = `https://img.youtube.com/vi/${videoId}/0.jpg`;
-                }
-              } else {
-                bgImage = firstItem;
-              }
-              if (bgImage) blurBg.style.backgroundImage = `url('${bgImage}')`;
-
-              carouselContainer.appendChild(blurBg);
-
-              // Carrossel
-              const carousel = document.createElement("div");
-              carousel.className = "carousel";
-
-              mediaItems.forEach(item => {
-                const el = document.createElement("div");
-                el.className = "carousel-item";
-
-                if (item.includes("youtube.com") || item.includes("youtu.be")) {
-                  let videoId = "";
-                  if (item.includes("youtube.com/watch")) {
-                    const url = new URL(item);
-                    videoId = url.searchParams.get("v");
-                  } else if (item.includes("youtu.be")) {
-                    videoId = item.split("/").pop();
-                  } else if (item.includes("youtube.com/shorts")) {
-                    videoId = item.split("/").pop();
-                  }
-
-                  if (videoId) {
-                    const thumbUrl = `https://img.youtube.com/vi/${videoId}/0.jpg`;
-                    const link = document.createElement("a");
-                    link.href = `https://www.youtube.com/watch?v=${videoId}`;
-                    link.target = "_blank";
-                    link.rel = "noopener noreferrer";
-                    const img = document.createElement("img");
-                    img.src = thumbUrl;
-                    img.alt = "Vídeo do YouTube";
-                    link.appendChild(img);
-                    el.appendChild(link);
-                  }
-                } else {
-                  const img = document.createElement("img");
-                  img.src = item;
-                  el.appendChild(img);
-                }
-                carousel.appendChild(el);
-              });
-
-              let index = 0;
-              setInterval(() => {
-                index = (index + 1) % mediaItems.length;
-                carousel.style.transform = `translateX(-${index * 100}%)`;
-              }, 4000);
-
-              carouselContainer.appendChild(carousel);
-              contentRow.appendChild(carouselContainer);
-            }
-
-            // Container texto e botões (botões ficam no fim)
-            const textContainer = document.createElement("div");
-            textContainer.className = "text-container";
-
-            if (description.trim()) {
-              const descEl = document.createElement("div");
-              descEl.className = "project-description";
-              descEl.textContent = description.trim();
-              textContainer.appendChild(descEl);
-            }
-
-            if (linkButtons.length > 0) {
-              const linksContainer = document.createElement("div");
-              linksContainer.className = "links-container";
-
-              linkButtons.forEach(({ name, url }) => {
-                const linkBtn = document.createElement("a");
-                linkBtn.href = url;
-                linkBtn.target = "_blank";
-                linkBtn.rel = "noopener noreferrer";
-                linkBtn.textContent = name;
-
-                linksContainer.appendChild(linkBtn);
-              });
-
-              textContainer.appendChild(linksContainer);
-            }
-
-            contentRow.appendChild(textContainer);
-
-            card.appendChild(contentRow);
-            container.appendChild(card);
-
-            // Ajuste do layout pós-renderização para detectar tamanho do texto
-            setTimeout(() => {
-              if (!carouselContainer) return;
-
-              const imgHeight = carouselContainer.clientHeight;
-              const textHeight = textContainer.clientHeight;
-
-              if (textHeight > imgHeight * 1.1) {
-                // Texto maior: muda flex direção e largura do card para largura da imagem
-                contentRow.classList.add("below-text");
-                card.classList.add("narrow-width");
-                textContainer.style.maxWidth = "100%";
-              } else {
-                contentRow.classList.remove("below-text");
-                card.classList.remove("narrow-width");
-                textContainer.style.maxWidth = `calc(100% - ${carouselContainer.clientWidth + 16}px)`;
-              }
-            }, 100);
-          } catch (err) {
-            console.warn(`Erro ao carregar projeto ${projectName}:`, err);
-          }
-        }
-      } catch (err) {
-        console.error("Erro ao carregar master.dat:", err);
-      }
-    }
-
-    window.onload = loadProjects;
+    // Inicializar quando a página carregar
+    document.addEventListener("DOMContentLoaded", () => {
+      const loader = new ProjectLoader();
+      loader.loadProjects();
+    });
   </script>
 </body>
 </html>

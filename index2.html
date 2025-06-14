@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projetos Maker</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+      color: #fff;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+      text-align: center;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+      animation: shimmer 3s infinite;
+    }
+
+    @keyframes shimmer {
+      0% { left: -100%; }
+      100% { left: 100%; }
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(45deg, #3a86ff, #06ffa5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 0 30px rgba(58, 134, 255, 0.3);
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 3rem;
+      font-size: 1.2rem;
+      color: #888;
+    }
+
+    .loading::after {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #333;
+      border-top: 2px solid #3a86ff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-left: 10px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .project-card {
+      background: linear-gradient(145deg, #1f1f1f 0%, #2a2a2a 100%);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 
+        0 8px 32px rgba(0,0,0,0.4),
+        0 0 0 1px rgba(255,255,255,0.05);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 
+        0 16px 48px rgba(0,0,0,0.5),
+        0 0 0 1px rgba(255,255,255,0.1);
+    }
+
+    .project-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      background: linear-gradient(135deg, rgba(58, 134, 255, 0.1) 0%, rgba(6, 255, 165, 0.1) 100%);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin: 0;
+    }
+
+    .content-wrapper {
+      padding: 2rem;
+    }
+
+    .carousel-container {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      width: 400px;
+      aspect-ratio: 16 / 9;
+      float: left;
+      margin: 0 2rem 1rem 0;
+      shape-outside: margin-box;
+    }
+
+    .carousel-blur-bg {
+      position: absolute;
+      inset: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: blur(20px) brightness(0.3);
+      transform: scale(1.2);
+      z-index: 1;
+    }
+
+    .carousel {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .carousel-item img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-item a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .carousel-item a::after {
+      content: '▶';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      color: rgba(255,255,255,0.8);
+      text-shadow: 0 0 20px rgba(0,0,0,0.8);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .carousel-item a:hover::after {
+      opacity: 1;
+    }
+
+    .carousel-item a:hover img {
+      transform: scale(1.05);
+    }
+
+    .carousel-indicators {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 0.5rem;
+      z-index: 3;
+    }
+
+    .indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.4);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .indicator.active {
+      background: #3a86ff;
+      transform: scale(1.2);
+    }
+
+    .text-content {
+      display: flow-root; /* Cria novo contexto de formatação para float */
+      line-height: 1.7;
+    }
+
+    .project-about {
+      font-size: 1rem;
+      color: #b0b0b0;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: rgba(58, 134, 255, 0.1);
+      border-left: 3px solid #3a86ff;
+      border-radius: 0 8px 8px 0;
+    }
+
+    /* Estilo adicional para o modo de overflow */
+    .content-wrapper.text-overflow-mode {
+      align-items: flex-start;
+    }
+
+    .content-wrapper.text-overflow-mode .carousel-container {
+      align-self: flex-start;
+    }
+
+    /* Seção sobre o projeto */
+    .project-about {
+      margin-bottom: 1.5rem;
+    }
+
+    .about-section {
+      background: rgba(6, 255, 165, 0.1);
+      border-left: 3px solid #06ffa5;
+      border-radius: 0 8px 8px 0;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      clear: both;
+    }
+
+    .about-section h3 {
+      margin: 0 0 1rem 0;
+      color: #06ffa5;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    .about-section p {
+      margin: 0;
+      color: #d0d0d0;
+      line-height: 1.6;
+    }
+
+    .project-description {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #e0e0e0;
+      white-space: pre-line;
+      text-align: justify;
+      margin-bottom: 2rem;
+    }
+
+    .links-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      clear: both; /* Garante que os botões fiquem abaixo do float */
+      padding-top: 1rem;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(135deg, #3a86ff 0%, #06ffa5 100%);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 16px rgba(58, 134, 255, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-link::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .project-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(58, 134, 255, 0.4);
+    }
+
+    .project-link:hover::before {
+      left: 100%;
+    }
+
+    .project-link:active {
+      transform: translateY(0);
+    }
+
+    .error-message {
+      background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    /* Layouts responsivos melhorados */
+    @media (max-width: 1200px) {
+      .carousel-container {
+        width: 350px;
+        margin-right: 1.5rem;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .carousel-container {
+        float: none;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 1.5rem auto;
+        display: block;
+      }
+      
+      .project-title {
+        font-size: 1.5rem;
+        padding: 1.25rem 1.5rem;
+      }
+      
+      .content-wrapper {
+        padding: 1.5rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
+      
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      .project-title {
+        font-size: 1.3rem;
+        padding: 1rem;
+      }
+      
+      .content-wrapper {
+        padding: 1rem;
+      }
+      
+      .links-container {
+        justify-content: center;
+      }
+    }
+
+    /* Animação de entrada escalonada */
+    .project-card:nth-child(1) { animation-delay: 0.1s; }
+    .project-card:nth-child(2) { animation-delay: 0.2s; }
+    .project-card:nth-child(3) { animation-delay: 0.3s; }
+    .project-card:nth-child(4) { animation-delay: 0.4s; }
+    .project-card:nth-child(5) { animation-delay: 0.5s; }
+
+    footer {
+      background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projetos Maker CABL</h1>
+  </header>
+  
+  <main id="projects">
+    <div class="loading">Carregando projetos...</div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Gabriel J Santos</p>
+  </footer>
+
+  <script>
+    class ProjectLoader {
+      constructor() {
+        this.container = document.getElementById("projects");
+        this.carousels = new Map();
+      }
+
+      async loadProjects() {
+        try {
+          const response = await fetch("master.dat");
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          
+          const projectNames = (await response.text())
+            .split("\n")
+            .map(l => l.trim())
+            .filter(l => l);
+
+          // Limpar loading
+          this.container.innerHTML = '';
+
+          if (projectNames.length === 0) {
+            this.showError("Nenhum projeto encontrado");
+            return;
+          }
+
+          // Carregar projetos em paralelo
+          const projectPromises = projectNames.map(name => this.loadProject(name));
+          await Promise.allSettled(projectPromises);
+
+        } catch (err) {
+          console.error("Erro ao carregar master.dat:", err);
+          this.showError("Erro ao carregar lista de projetos");
+        }
+      }
+
+      async loadProject(projectName) {
+        const infPath = `content/${projectName}/inf.dat`;
+
+        try {
+          const infResponse = await fetch(infPath);
+          if (!infResponse.ok) throw new Error(`HTTP ${infResponse.status}`);
+          
+          const lines = (await infResponse.text()).split(/\r?\n/);
+          const title = lines[0]?.trim() || projectName;
+
+          const projectData = this.parseProjectData(lines);
+          this.createProjectCard(title, projectData);
+
+        } catch (err) {
+          console.warn(`Erro ao carregar projeto ${projectName}:`, err);
+          this.createErrorCard(projectName, err.message);
+        }
+      }
+
+      parseProjectData(lines) {
+        const mediaItems = [];
+        let description = "";
+        let about = "";
+        const linkButtons = [];
+        let section = "media";
+
+        for (let i = 1; i < lines.length; i++) {
+          const line = lines[i].trim();
+          if (!line) continue;
+
+          if (/^descrição/i.test(line)) {
+            section = "desc";
+            continue;
+          }
+
+          if (/^sobre/i.test(line)) {
+            section = "about";
+            continue;
+          }
+
+          if (line.startsWith("LINK|")) {
+            const match = line.match(/^LINK\|"(.*)"\|(.*)$/);
+            if (match) {
+              linkButtons.push({ 
+                name: match[1], 
+                url: match[2] 
+              });
+            }
+            continue;
+          }
+
+          if (section === "media") {
+            mediaItems.push(line);
+          } else if (section === "desc") {
+            description += line + "\n";
+          } else if (section === "about") {
+            about += line + "\n";
+          }
+        }
+
+        return {
+          mediaItems: mediaItems.filter(item => item),
+          description: description.trim(),
+          about: about.trim(),
+          linkButtons
+        };
+      }
+
+      createProjectCard(title, data) {
+        const card = document.createElement("div");
+        card.className = "project-card";
+
+        // Título
+        const titleEl = document.createElement("h2");
+        titleEl.className = "project-title";
+        titleEl.textContent = title;
+        card.appendChild(titleEl);
+
+        // Wrapper do conteúdo
+        const wrapper = document.createElement("div");
+        wrapper.className = "content-wrapper";
+
+        // Conteúdo de texto (agora contém o carrossel dentro)
+        const textContent = document.createElement("div");
+        textContent.className = "text-content";
+
+        // Carrossel dentro do texto (float left)
+        if (data.mediaItems.length > 0) {
+          const carouselEl = this.createCarousel(data.mediaItems, title);
+          textContent.appendChild(carouselEl);
+        }
+
+        // Seção "Sobre" (se houver)
+        if (data.about) {
+          const aboutSection = document.createElement("div");
+          aboutSection.className = "about-section";
+          
+          const aboutTitle = document.createElement("h3");
+          aboutTitle.textContent = "Sobre o Projeto";
+          aboutSection.appendChild(aboutTitle);
+          
+          const aboutText = document.createElement("p");
+          aboutText.textContent = data.about;
+          aboutSection.appendChild(aboutText);
+          
+          textContent.appendChild(aboutSection);
+        }
+
+        // Descrição do projeto
+        if (data.description) {
+          const desc = document.createElement("div");
+          desc.className = "project-description";
+          desc.textContent = data.description;
+          textContent.appendChild(desc);
+        }
+
+        // Links/botões (sempre por último, com clear: both)
+        if (data.linkButtons.length > 0) {
+          const linksContainer = document.createElement("div");
+          linksContainer.className = "links-container";
+
+          data.linkButtons.forEach(({ name, url }) => {
+            const link = document.createElement("a");
+            link.href = url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.className = "project-link";
+            link.textContent = name;
+            linksContainer.appendChild(link);
+          });
+
+          textContent.appendChild(linksContainer);
+        }
+
+        wrapper.appendChild(textContent);
+        card.appendChild(wrapper);
+        this.container.appendChild(card);
+      }
+
+      createCarousel(mediaItems, projectTitle) {
+        const container = document.createElement("div");
+        container.className = "carousel-container";
+
+        // Fundo desfocado
+        const blurBg = document.createElement("div");
+        blurBg.className = "carousel-blur-bg";
+        
+        const bgImage = this.getImageUrl(mediaItems[0]);
+        if (bgImage) {
+          blurBg.style.backgroundImage = `url('${bgImage}')`;
+        }
+        container.appendChild(blurBg);
+
+        // Carrossel
+        const carousel = document.createElement("div");
+        carousel.className = "carousel";
+
+        mediaItems.forEach(item => {
+          const slideEl = document.createElement("div");
+          slideEl.className = "carousel-item";
+          
+          const mediaEl = this.createMediaElement(item);
+          slideEl.appendChild(mediaEl);
+          carousel.appendChild(slideEl);
+        });
+
+        container.appendChild(carousel);
+
+        // Indicadores (se mais de 1 item)
+        if (mediaItems.length > 1) {
+          const indicators = this.createIndicators(mediaItems.length);
+          container.appendChild(indicators);
+          
+          // Configurar carrossel automático
+          this.setupCarousel(carousel, indicators, mediaItems.length);
+        }
+
+        return container;
+      }
+
+      getImageUrl(item) {
+        if (this.isYouTubeUrl(item)) {
+          const videoId = this.extractYouTubeId(item);
+          return videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null;
+        }
+        return item;
+      }
+
+      createMediaElement(item) {
+        if (this.isYouTubeUrl(item)) {
+          const videoId = this.extractYouTubeId(item);
+          if (videoId) {
+            const link = document.createElement("a");
+            link.href = `https://www.youtube.com/watch?v=${videoId}`;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            
+            const img = document.createElement("img");
+            img.src = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+            img.alt = "Vídeo do YouTube";
+            img.loading = "lazy";
+            
+            link.appendChild(img);
+            return link;
+          }
+        }
+
+        const img = document.createElement("img");
+        img.src = item;
+        img.alt = "Imagem do projeto";
+        img.loading = "lazy";
+        return img;
+      }
+
+      isYouTubeUrl(url) {
+        return url.includes("youtube.com") || url.includes("youtu.be");
+      }
+
+      extractYouTubeId(url) {
+        try {
+          if (url.includes("youtube.com/watch")) {
+            const urlObj = new URL(url);
+            return urlObj.searchParams.get("v");
+          } else if (url.includes("youtu.be")) {
+            return url.split("/").pop().split("?")[0];
+          } else if (url.includes("youtube.com/shorts")) {
+            return url.split("/").pop().split("?")[0];
+          }
+        } catch (e) {
+          console.warn("Erro ao extrair ID do YouTube:", e);
+        }
+        return null;
+      }
+
+      createIndicators(count) {
+        const indicators = document.createElement("div");
+        indicators.className = "carousel-indicators";
+
+        for (let i = 0; i < count; i++) {
+          const indicator = document.createElement("div");
+          indicator.className = `indicator ${i === 0 ? 'active' : ''}`;
+          indicator.addEventListener("click", () => {
+            // Implementar navegação manual se necessário
+          });
+          indicators.appendChild(indicator);
+        }
+
+        return indicators;
+      }
+
+      setupCarousel(carousel, indicators, itemCount) {
+        let currentIndex = 0;
+        const indicatorElements = indicators.querySelectorAll(".indicator");
+
+        const updateCarousel = () => {
+          carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+          
+          indicatorElements.forEach((ind, i) => {
+            ind.classList.toggle("active", i === currentIndex);
+          });
+        };
+
+        const nextSlide = () => {
+          currentIndex = (currentIndex + 1) % itemCount;
+          updateCarousel();
+        };
+
+        // Auto-play
+        setInterval(nextSlide, 5000);
+
+        // Navegação manual pelos indicadores
+        indicatorElements.forEach((indicator, index) => {
+          indicator.addEventListener("click", () => {
+            currentIndex = index;
+            updateCarousel();
+          });
+        });
+      }
+
+      createErrorCard(projectName, errorMessage) {
+        const card = document.createElement("div");
+        card.className = "project-card";
+        
+        const title = document.createElement("h2");
+        title.className = "project-title";
+        title.textContent = `Erro: ${projectName}`;
+        
+        const error = document.createElement("div");
+        error.className = "error-message";
+        error.textContent = `Não foi possível carregar o projeto: ${errorMessage}`;
+        
+        card.appendChild(title);
+        card.appendChild(error);
+        this.container.appendChild(card);
+      }
+
+      showError(message) {
+        this.container.innerHTML = `
+          <div class="error-message">
+            <h3>Erro</h3>
+            <p>${message}</p>
+          </div>
+        `;
+      }
+    }
+
+    // Inicializar quando a página carregar
+    document.addEventListener("DOMContentLoaded", () => {
+      const loader = new ProjectLoader();
+      loader.loadProjects();
+    });
+  </script>
+</body>
+</html>
