@@ -8,22 +8,22 @@
   "featured": false,
   "dates": {
     "created": "2025-08-31T17:31:11.377811Z",
-    "lastModified": "2025-08-31T17:55:45.596872Z"
+    "lastModified": "2025-08-31T18:35:22.594501Z"
   },
   "media": [
-    {
-      "type": "image",
-      "url": "assets/projects/F1_funcional_de_papelao/IMG-20250331-WA0016.jpg",
-      "alt": "Imagem do projeto - 1",
-      "caption": "Imagem do projeto",
-      "order": 1
-    },
     {
       "type": "video",
       "url": "https://youtube.com/shorts/X2J1ezuxQSE?si=8JtDxYIz2yvxPUyx",
       "alt": "Vídeo do projeto F1 Funcional",
       "caption": "Vídeo do projeto",
       "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/F1_funcional_de_papelao/IMG-20250331-WA0016.jpg",
+      "alt": "Imagem do projeto - 3",
+      "caption": "Imagem do projeto",
+      "order": 3
     }
   ],
   "links": [],

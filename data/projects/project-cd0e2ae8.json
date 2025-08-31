@@ -8,15 +8,15 @@
   "featured": false,
   "dates": {
     "created": "2025-08-31T17:31:11.384935Z",
-    "lastModified": "2025-08-31T17:55:45.604723Z"
+    "lastModified": "2025-08-31T18:35:22.609859Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/piano_interativo_com_makey_makey/1.jpg",
-      "alt": "Imagem do projeto - 1",
+      "alt": "Imagem do projeto - 2",
       "caption": "Imagem do projeto",
-      "order": 1
+      "order": 2
     }
   ],
   "links": [],

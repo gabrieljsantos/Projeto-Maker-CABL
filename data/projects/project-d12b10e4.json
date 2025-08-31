@@ -1,0 +1,35 @@
+{
+  "id": "project-d12b10e4",
+  "title": "Casa Com Iluminação",
+  "slug": "casa-com-iluminação",
+  "description": "",
+  "category": [],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T18:35:22.577067Z",
+    "lastModified": "2025-08-31T18:35:22.577067Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Casa com Iluminação/IMG_20240927_134334999.MP.jpg",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Casa com Iluminação/IMG_20240927_134347612.MP.jpg",
+      "alt": "Imagem do projeto - 2",
+      "caption": "Imagem do projeto",
+      "order": 2
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

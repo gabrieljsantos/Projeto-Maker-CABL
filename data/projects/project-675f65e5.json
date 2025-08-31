@@ -8,15 +8,29 @@
   "featured": false,
   "dates": {
     "created": "2025-08-31T17:31:11.371056Z",
-    "lastModified": "2025-08-31T17:55:45.592885Z"
+    "lastModified": "2025-08-31T18:35:22.577067Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/Carro_de_Corrida/img (1).jpg",
-      "alt": "Imagem do projeto - 1",
+      "alt": "Imagem do projeto - 4",
       "caption": "Imagem do projeto",
-      "order": 1
+      "order": 4
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Carro_de_Corrida/img (2).gif",
+      "alt": "Imagem do projeto - 5",
+      "caption": "Imagem do projeto",
+      "order": 5
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Carro_de_Corrida/r34.gif",
+      "alt": "Imagem do projeto - 6",
+      "caption": "Imagem do projeto",
+      "order": 6
     }
   ],
   "links": [],

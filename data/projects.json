@@ -1,12 +1,18 @@
 {
   "metadata": {
     "version": "2.0",
-    "lastUpdate": "2025-08-31T17:55:45.607184Z",
-    "totalProjects": 11,
+    "lastUpdate": "2025-08-31T18:35:22.610849Z",
+    "totalProjects": 14,
     "categories": [
+      "Papelão",
+      "Modelagem 3d",
+      "Pintura",
+      "Carrinhos",
+      "Minecraft",
+      "Impressora 3d",
       "Makey Makey",
-      "Scratch",
-      "Carrinhos"
+      "Tinkercad",
+      "Scratch"
     ],
     "featuredCount": 0,
     "generator": "Python Project Generator v2.0"
@@ -19,7 +25,25 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:55:45.592885Z"
+      "lastModified": "2025-08-31T18:35:22.577067Z"
+    },
+    {
+      "id": "project-d12b10e4",
+      "slug": "casa-com-iluminação",
+      "title": "Casa Com Iluminação",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T18:35:22.577067Z"
+    },
+    {
+      "id": "project-7b469eeb",
+      "slug": "chaveiros",
+      "title": "Chaveiros",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T18:35:22.577067Z"
     },
     {
       "id": "project-6d285ce4",
@@ -27,8 +51,15 @@
       "title": "Do Tinkercad Ate A Arte Ludica",
       "status": "active",
       "featured": false,
-      "category": [],
-      "lastModified": "2025-08-31T17:55:45.593874Z"
+      "category": [
+        {
+          "0": "Tinkercad",
+          "1": "Impressora 3d",
+          "2": "Pintura",
+          "3": "Modelagem 3d"
+        }
+      ],
+      "lastModified": "2025-08-31T18:35:22.577067Z"
     },
     {
       "id": "project-d9c888c0",
@@ -37,7 +68,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:55:45.595873Z"
+      "lastModified": "2025-08-31T18:35:22.592345Z"
     },
     {
       "id": "project-b7186599",
@@ -46,7 +77,16 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:55:45.596872Z"
+      "lastModified": "2025-08-31T18:35:22.594501Z"
+    },
+    {
+      "id": "project-8b1ae6ff",
+      "slug": "gato-articulado",
+      "title": "Gato Articulado",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T18:35:22.596486Z"
     },
     {
       "id": "project-f6fff6ce",
@@ -55,7 +95,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:55:45.598870Z"
+      "lastModified": "2025-08-31T18:35:22.598486Z"
     },
     {
       "id": "project-52bf09c9",
@@ -63,8 +103,13 @@
       "title": "Minecraft Imersivo",
       "status": "active",
       "featured": false,
-      "category": [],
-      "lastModified": "2025-08-31T17:55:45.600870Z"
+      "category": [
+        {
+          "0": "Minecraft",
+          "1": "Papelão"
+        }
+      ],
+      "lastModified": "2025-08-31T18:35:22.600487Z"
     },
     {
       "id": "project-5eb32f7b",
@@ -73,7 +118,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:55:45.601898Z"
+      "lastModified": "2025-08-31T18:35:22.602485Z"
     },
     {
       "id": "project-b5e08fe4",
@@ -82,7 +127,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:55:45.601898Z"
+      "lastModified": "2025-08-31T18:35:22.602485Z"
     },
     {
       "id": "project-8c3b0d1a",
@@ -91,7 +136,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:55:45.603361Z"
+      "lastModified": "2025-08-31T18:35:22.606857Z"
     },
     {
       "id": "project-cd0e2ae8",
@@ -100,7 +145,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:55:45.604723Z"
+      "lastModified": "2025-08-31T18:35:22.609859Z"
     },
     {
       "id": "project-1a951d04",
@@ -115,7 +160,7 @@
           "2": "Carrinhos"
         }
       ],
-      "lastModified": "2025-08-31T17:55:45.605751Z"
+      "lastModified": "2025-08-31T18:35:22.610849Z"
     }
   ]
 }

@@ -14,50 +14,50 @@
   "featured": false,
   "dates": {
     "created": "2025-08-31T13:06:58.918429Z",
-    "lastModified": "2025-08-31T17:55:45.605751Z"
+    "lastModified": "2025-08-31T18:35:22.610849Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/1.jpg",
-      "alt": "Imagem do projeto - 1",
+      "alt": "Imagem do projeto - 7",
       "caption": "Imagem do projeto",
-      "order": 1
+      "order": 7
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/2.jpg",
-      "alt": "Imagem do projeto - 2",
+      "alt": "Imagem do projeto - 8",
       "caption": "Imagem do projeto",
-      "order": 2
+      "order": 8
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/3.jpg",
-      "alt": "Imagem do projeto - 3",
+      "alt": "Imagem do projeto - 9",
       "caption": "Imagem do projeto",
-      "order": 3
+      "order": 9
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/5.png",
-      "alt": "Imagem do projeto - 4",
+      "alt": "Imagem do projeto - 10",
       "caption": "Imagem do projeto",
-      "order": 4
+      "order": 10
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/gh45tbrt.png",
-      "alt": "Imagem do projeto - 5",
+      "alt": "Imagem do projeto - 11",
       "caption": "Imagem do projeto",
-      "order": 5
+      "order": 11
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/r43.png",
-      "alt": "Imagem do projeto - 6",
+      "alt": "Imagem do projeto - 12",
       "caption": "Imagem do projeto",
-      "order": 6
+      "order": 12
     }
   ],
   "links": [

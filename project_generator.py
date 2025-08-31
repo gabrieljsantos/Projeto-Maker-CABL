@@ -38,36 +38,59 @@ def save_json(json_data, json_path: Path):
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(json_data, f, ensure_ascii=False, indent=2)
 
+def scan_project_folder(project_folder: Path, existing_media=None):
+    """Retorna lista de imagens existentes na pasta do projeto, mantendo outros tipos de mídia existentes."""
+    if existing_media is None:
+        existing_media = []
+
+    # Mantém tudo que não seja imagem
+    media = [m for m in existing_media if m.get("type") != "image"]
+
+    # Extensões de imagem suportadas
+    image_extensions = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".svg"}
+
+    # Adiciona imagens encontradas na pasta
+    images = sorted([f for f in project_folder.iterdir() if f.suffix.lower() in image_extensions])
+    starting_order = max([m.get("order", 0) for m in existing_media], default=0) + 1
+    for idx, img in enumerate(images, start=starting_order):
+        media.append({
+            "type": "image",
+            "url": str(img).replace("\\", "/"),
+            "alt": f"Imagem do projeto - {idx}",
+            "caption": "Imagem do projeto",
+            "order": idx
+        })
+
+    return media
+
 def update_project_json(project_folder: Path):
     project_name = project_folder.name
     project_id = generate_id(project_name)
     json_path = DATA_DIR / f"{project_id}.json"
     existing = load_existing_project_json(json_path)
     
-    media = scan_project_folder(project_folder)
-    
     now = datetime.utcnow().isoformat() + "Z"
     
     if existing:
-        # Mantém description, links, category e metrics
         description = existing.get("description", "")
-        links = existing.get("links", [])# Mantém a categoria existente ou inicializa como lista vazia
+        links = existing.get("links", [])
         existing_category = existing.get("category", [])
-        # Se quiser garantir que seja sempre no formato de lista de dict
         if not isinstance(existing_category, list):
             existing_category = []
-
         category = existing_category
         metrics = existing.get("metrics", {"views": 0, "likes": 0, "shares": 0})
-        # Atualiza apenas media e lastModified
         last_modified = now
+        existing_media = existing.get("media", [])
     else:
         description = ""
         links = []
-        category = ""
+        category = []
         metrics = {"views": 0, "likes": 0, "shares": 0}
         last_modified = now
-    
+        existing_media = []
+
+    media = scan_project_folder(project_folder, existing_media=existing_media)
+
     project_json = {
         "id": project_id,
         "title": project_name.replace("_", " ").title(),
@@ -84,7 +107,7 @@ def update_project_json(project_folder: Path):
         "links": links,
         "metrics": metrics
     }
-    
+
     save_json(project_json, json_path)
     return project_json
 def generate_master_json(projects_json_list):

@@ -1,0 +1,42 @@
+{
+  "id": "project-7b469eeb",
+  "title": "Chaveiros",
+  "slug": "chaveiros",
+  "description": "",
+  "category": [
+    {
+      "0": "Tinkercad",
+      "1": "Impressora 3d",
+      "2": "Pintura",
+      "3": "Modelagem 3d"
+    }
+  ],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T18:35:22.577067Z",
+    "lastModified": "2025-08-31T18:35:22.577067Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Chaveiros/IMG_20240927_091419329.MP.jpg",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Chaveiros/IMG_20240927_092006538.MP.jpg",
+      "alt": "Imagem do projeto - 2",
+      "caption": "Imagem do projeto",
+      "order": 2
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

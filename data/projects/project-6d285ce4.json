@@ -3,41 +3,48 @@
   "title": "Do Tinkercad Ate A Arte Ludica",
   "slug": "do_tinkercad_ate_a_arte_ludica",
   "description": "Inicialmente, os alunos receberam uma introdução sobre o funcionamento do Tinkercad, preparando-os para modelar personagens em 3D. Após essa etapa, cada um acessou a plataforma e começou a modelagem dos próprios personagens.\n\nComo resultado, os modelos foram impressos em 3D e, posteriormente, pintados por eles mesmos, dando um toque pessoal e criativo às criações.\n\nConforme combinado com os pequenos, cada personagem precisava de um cenário ou uma casa — afinal, todo personagem precisa de um mundo para existir, não é mesmo?\n\nEsse projeto uniu tecnologia e arte de forma divertida, incentivando a criatividade, o raciocínio espacial e o desenvolvimento artístico dos alunos.",
-  "category": [],
+  "category": [
+    {
+      "0": "Tinkercad",
+      "1": "Impressora 3d",
+      "2": "Pintura",
+      "3": "Modelagem 3d"
+    }
+  ],
   "status": "active",
   "featured": false,
   "dates": {
     "created": "2025-08-31T17:31:11.376669Z",
-    "lastModified": "2025-08-31T17:55:45.593874Z"
+    "lastModified": "2025-08-31T18:35:22.577067Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/Do_Tinkercad_ate_a_arte_ludica/1.png",
-      "alt": "Imagem do projeto - 1",
+      "alt": "Imagem do projeto - 5",
       "caption": "Imagem do projeto",
-      "order": 1
+      "order": 5
     },
     {
       "type": "image",
       "url": "assets/projects/Do_Tinkercad_ate_a_arte_ludica/2.png",
-      "alt": "Imagem do projeto - 2",
+      "alt": "Imagem do projeto - 6",
       "caption": "Imagem do projeto",
-      "order": 2
+      "order": 6
     },
     {
       "type": "image",
       "url": "assets/projects/Do_Tinkercad_ate_a_arte_ludica/3.png",
-      "alt": "Imagem do projeto - 3",
+      "alt": "Imagem do projeto - 7",
       "caption": "Imagem do projeto",
-      "order": 3
+      "order": 7
     },
     {
       "type": "image",
       "url": "assets/projects/Do_Tinkercad_ate_a_arte_ludica/4.png",
-      "alt": "Imagem do projeto - 4",
+      "alt": "Imagem do projeto - 8",
       "caption": "Imagem do projeto",
-      "order": 4
+      "order": 8
     }
   ],
   "links": [

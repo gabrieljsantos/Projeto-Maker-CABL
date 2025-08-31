@@ -1,0 +1,28 @@
+{
+  "id": "project-8b1ae6ff",
+  "title": "Gato Articulado",
+  "slug": "gato-articulado",
+  "description": "",
+  "category": [],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T18:35:22.596486Z",
+    "lastModified": "2025-08-31T18:35:22.596486Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Gato Articulado/cat.gif",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

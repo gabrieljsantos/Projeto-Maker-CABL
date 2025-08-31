@@ -3,27 +3,32 @@
   "title": "Minecraft Imersivo",
   "slug": "minecraft_imersivo",
   "description": "",
-  "category": [],
+  "category": [
+    {
+      "0": "Minecraft",
+      "1": "Papelão"
+    }
+  ],
   "status": "active",
   "featured": false,
   "dates": {
     "created": "2025-08-31T17:31:11.377811Z",
-    "lastModified": "2025-08-31T17:55:45.600870Z"
+    "lastModified": "2025-08-31T18:35:22.600487Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/Minecraft_imersivo/1.jpg",
-      "alt": "Imagem do projeto - 1",
+      "alt": "Imagem do projeto - 3",
       "caption": "Imagem do projeto",
-      "order": 1
+      "order": 3
     },
     {
       "type": "image",
       "url": "assets/projects/Minecraft_imersivo/2.jpg",
-      "alt": "Imagem do projeto - 2",
+      "alt": "Imagem do projeto - 4",
       "caption": "Imagem do projeto",
-      "order": 2
+      "order": 4
     }
   ],
   "links": [],
