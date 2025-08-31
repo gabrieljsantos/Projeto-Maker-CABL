@@ -1,23 +1,32 @@
 {
   "metadata": {
     "version": "2.0",
-    "lastUpdate": "2025-08-31T18:35:22.610849Z",
-    "totalProjects": 14,
+    "lastUpdate": "2025-08-31T18:47:27.687161Z",
+    "totalProjects": 15,
     "categories": [
-      "Papelão",
-      "Modelagem 3d",
+      "Scratch",
       "Pintura",
-      "Carrinhos",
-      "Minecraft",
-      "Impressora 3d",
+      "Papelão",
       "Makey Makey",
+      "Carrinhos",
+      "Modelagem 3d",
+      "Impressora 3d",
       "Tinkercad",
-      "Scratch"
+      "Minecraft"
     ],
     "featuredCount": 0,
     "generator": "Python Project Generator v2.0"
   },
   "projects": [
+    {
+      "id": "project-acf7e043",
+      "slug": "bunny-race",
+      "title": "Bunny Race",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T18:47:27.666254Z"
+    },
     {
       "id": "project-675f65e5",
       "slug": "carro_de_corrida",
@@ -25,7 +34,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T18:35:22.577067Z"
+      "lastModified": "2025-08-31T18:47:27.668615Z"
     },
     {
       "id": "project-d12b10e4",
@@ -34,7 +43,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T18:35:22.577067Z"
+      "lastModified": "2025-08-31T18:47:27.670373Z"
     },
     {
       "id": "project-7b469eeb",
@@ -42,8 +51,15 @@
       "title": "Chaveiros",
       "status": "active",
       "featured": false,
-      "category": [],
-      "lastModified": "2025-08-31T18:35:22.577067Z"
+      "category": [
+        {
+          "0": "Tinkercad",
+          "1": "Impressora 3d",
+          "2": "Pintura",
+          "3": "Modelagem 3d"
+        }
+      ],
+      "lastModified": "2025-08-31T18:47:27.671946Z"
     },
     {
       "id": "project-6d285ce4",
@@ -59,7 +75,7 @@
           "3": "Modelagem 3d"
         }
       ],
-      "lastModified": "2025-08-31T18:35:22.577067Z"
+      "lastModified": "2025-08-31T18:47:27.672648Z"
     },
     {
       "id": "project-d9c888c0",
@@ -68,7 +84,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T18:35:22.592345Z"
+      "lastModified": "2025-08-31T18:47:27.675043Z"
     },
     {
       "id": "project-b7186599",
@@ -77,7 +93,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T18:35:22.594501Z"
+      "lastModified": "2025-08-31T18:47:27.676799Z"
     },
     {
       "id": "project-8b1ae6ff",
@@ -85,8 +101,10 @@
       "title": "Gato Articulado",
       "status": "active",
       "featured": false,
-      "category": [],
-      "lastModified": "2025-08-31T18:35:22.596486Z"
+      "category": [
+        {}
+      ],
+      "lastModified": "2025-08-31T18:47:27.677825Z"
     },
     {
       "id": "project-f6fff6ce",
@@ -94,8 +112,10 @@
       "title": "Guitarra Interativa Com Makey Makey",
       "status": "active",
       "featured": false,
-      "category": [],
-      "lastModified": "2025-08-31T18:35:22.598486Z"
+      "category": [
+        {}
+      ],
+      "lastModified": "2025-08-31T18:47:27.678823Z"
     },
     {
       "id": "project-52bf09c9",
@@ -109,7 +129,7 @@
           "1": "Papelão"
         }
       ],
-      "lastModified": "2025-08-31T18:35:22.600487Z"
+      "lastModified": "2025-08-31T18:47:27.680819Z"
     },
     {
       "id": "project-5eb32f7b",
@@ -118,7 +138,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T18:35:22.602485Z"
+      "lastModified": "2025-08-31T18:47:27.681901Z"
     },
     {
       "id": "project-b5e08fe4",
@@ -127,7 +147,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T18:35:22.602485Z"
+      "lastModified": "2025-08-31T18:47:27.683919Z"
     },
     {
       "id": "project-8c3b0d1a",
@@ -135,8 +155,10 @@
       "title": "Pac - Blue Pen (Caneta Azul - O Jogo)",
       "status": "active",
       "featured": false,
-      "category": [],
-      "lastModified": "2025-08-31T18:35:22.606857Z"
+      "category": [
+        {}
+      ],
+      "lastModified": "2025-08-31T18:47:27.684919Z"
     },
     {
       "id": "project-cd0e2ae8",
@@ -144,8 +166,10 @@
       "title": "Piano Interativo Com Makey Makey",
       "status": "active",
       "featured": false,
-      "category": [],
-      "lastModified": "2025-08-31T18:35:22.609859Z"
+      "category": [
+        {}
+      ],
+      "lastModified": "2025-08-31T18:47:27.686110Z"
     },
     {
       "id": "project-1a951d04",
@@ -160,7 +184,7 @@
           "2": "Carrinhos"
         }
       ],
-      "lastModified": "2025-08-31T18:35:22.610849Z"
+      "lastModified": "2025-08-31T18:47:27.687161Z"
     }
   ]
 }

@@ -13,22 +13,22 @@
   "featured": false,
   "dates": {
     "created": "2025-08-31T17:31:11.377811Z",
-    "lastModified": "2025-08-31T18:35:22.600487Z"
+    "lastModified": "2025-08-31T18:47:27.680819Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/Minecraft_imersivo/1.jpg",
-      "alt": "Imagem do projeto - 3",
+      "alt": "Imagem do projeto - 5",
       "caption": "Imagem do projeto",
-      "order": 3
+      "order": 5
     },
     {
       "type": "image",
       "url": "assets/projects/Minecraft_imersivo/2.jpg",
-      "alt": "Imagem do projeto - 4",
+      "alt": "Imagem do projeto - 6",
       "caption": "Imagem do projeto",
-      "order": 4
+      "order": 6
     }
   ],
   "links": [],

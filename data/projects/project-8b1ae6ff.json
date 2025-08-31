@@ -3,20 +3,22 @@
   "title": "Gato Articulado",
   "slug": "gato-articulado",
   "description": "",
-  "category": [],
+  "category": [
+    {}
+  ],
   "status": "active",
-  "featured": false,
+  "featured": true,
   "dates": {
     "created": "2025-08-31T18:35:22.596486Z",
-    "lastModified": "2025-08-31T18:35:22.596486Z"
+    "lastModified": "2025-08-31T18:47:27.677825Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/Gato Articulado/cat.gif",
-      "alt": "Imagem do projeto - 1",
+      "alt": "Imagem do projeto - 2",
       "caption": "Imagem do projeto",
-      "order": 1
+      "order": 2
     }
   ],
   "links": [],

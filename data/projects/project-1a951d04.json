@@ -11,53 +11,53 @@
     }
   ],
   "status": "active",
-  "featured": false,
+  "featured": true,
   "dates": {
     "created": "2025-08-31T13:06:58.918429Z",
-    "lastModified": "2025-08-31T18:35:22.610849Z"
+    "lastModified": "2025-08-31T18:47:27.687161Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/1.jpg",
-      "alt": "Imagem do projeto - 7",
+      "alt": "Imagem do projeto - 13",
       "caption": "Imagem do projeto",
-      "order": 7
+      "order": 13
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/2.jpg",
-      "alt": "Imagem do projeto - 8",
+      "alt": "Imagem do projeto - 14",
       "caption": "Imagem do projeto",
-      "order": 8
+      "order": 14
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/3.jpg",
-      "alt": "Imagem do projeto - 9",
+      "alt": "Imagem do projeto - 15",
       "caption": "Imagem do projeto",
-      "order": 9
+      "order": 15
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/5.png",
-      "alt": "Imagem do projeto - 10",
+      "alt": "Imagem do projeto - 16",
       "caption": "Imagem do projeto",
-      "order": 10
+      "order": 16
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/gh45tbrt.png",
-      "alt": "Imagem do projeto - 11",
+      "alt": "Imagem do projeto - 17",
       "caption": "Imagem do projeto",
-      "order": 11
+      "order": 17
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/r43.png",
-      "alt": "Imagem do projeto - 12",
+      "alt": "Imagem do projeto - 18",
       "caption": "Imagem do projeto",
-      "order": 12
+      "order": 18
     }
   ],
   "links": [

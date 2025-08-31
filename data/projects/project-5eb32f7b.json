@@ -8,29 +8,29 @@
   "featured": false,
   "dates": {
     "created": "2025-08-31T17:31:11.382443Z",
-    "lastModified": "2025-08-31T18:35:22.602485Z"
+    "lastModified": "2025-08-31T18:47:27.681901Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/Montando_e_pintando_Animais/img (1).jpg",
-      "alt": "Imagem do projeto - 4",
+      "alt": "Imagem do projeto - 7",
       "caption": "Imagem do projeto",
-      "order": 4
+      "order": 7
     },
     {
       "type": "image",
       "url": "assets/projects/Montando_e_pintando_Animais/img (2).jpg",
-      "alt": "Imagem do projeto - 5",
+      "alt": "Imagem do projeto - 8",
       "caption": "Imagem do projeto",
-      "order": 5
+      "order": 8
     },
     {
       "type": "image",
       "url": "assets/projects/Montando_e_pintando_Animais/img (3).jpg",
-      "alt": "Imagem do projeto - 6",
+      "alt": "Imagem do projeto - 9",
       "caption": "Imagem do projeto",
-      "order": 6
+      "order": 9
     }
   ],
   "links": [],

@@ -2,38 +2,48 @@
   "id": "project-8c3b0d1a",
   "title": "Pac - Blue Pen (Caneta Azul - O Jogo)",
   "slug": "pac---blue-pen-(caneta-azul---o-jogo)",
-  "description": "",
-  "category": [],
+  "description": "**Descrição do Projeto: Caneta Azul Pac-Man**\n\nNeste jogo inspirado no clássico Pac-Man, você controla a icônica Caneta Azul usando as setas do teclado. Seu objetivo é coletar todos os logotipos do YouTube que estão espalhados pelo mapa. Mas cuidado! Os bocais de outras cores estão à espreita, prontos para te pegar.\n\n**Regras do Jogo:**\n\n- Use as setas do teclado para mover a Caneta Azul pelo labirinto.\n- Colete todos os logotipos do YouTube para completar o jogo.\n- Se você encontrar o bocal da Caneta Azul, todos os bocais de outras cores se transformarão em papéis.\n- Quando os bocais estão em modo papel, você pode coletá-los para ganhar pontos extras.\n- Para vencer o jogo, você deve coletar todos os itens do mapa, mas não é necessário coletar os bocais em modo papel para completar o jogo.\n\nPrepare-se para essa divertida aventura e ajude a Caneta Azul a defender seu mundo dos bocais de outras cores! Boa sorte!",
+  "category": [
+    {
+      "0": "Game",
+      "1": "Scratch"
+    }
+  ],
   "status": "active",
-  "featured": false,
+  "featured": true,
   "dates": {
     "created": "2025-08-31T17:31:11.382443Z",
-    "lastModified": "2025-08-31T18:35:22.606857Z"
+    "lastModified": "2025-08-31T18:47:27.684919Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/Pac - Blue Pen (Caneta Azul - O Jogo)/fre.png",
-      "alt": "Imagem do projeto - 4",
+      "alt": "Imagem do projeto - 7",
       "caption": "Imagem do projeto",
-      "order": 4
+      "order": 7
     },
     {
       "type": "image",
       "url": "assets/projects/Pac - Blue Pen (Caneta Azul - O Jogo)/g54gh45.png",
-      "alt": "Imagem do projeto - 5",
+      "alt": "Imagem do projeto - 8",
       "caption": "Imagem do projeto",
-      "order": 5
+      "order": 8
     },
     {
       "type": "image",
       "url": "assets/projects/Pac - Blue Pen (Caneta Azul - O Jogo)/r43frt34.png",
-      "alt": "Imagem do projeto - 6",
+      "alt": "Imagem do projeto - 9",
       "caption": "Imagem do projeto",
-      "order": 6
+      "order": 9
     }
   ],
-  "links": [],
+  "links": [
+    {
+      "name": "Veja o jogo no Scratch",
+      "url": "https://scratch.mit.edu/projects/1033493642"
+    }
+  ],
   "metrics": {
     "views": 0,
     "likes": 0,
