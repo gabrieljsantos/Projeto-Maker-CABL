@@ -1,0 +1,35 @@
+{
+  "id": "project-f6fff6ce",
+  "title": "Guitarra Interativa Com Makey Makey",
+  "slug": "guitarra_interativa_com_makey_makey",
+  "description": "",
+  "category": [],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T17:31:11.377811Z",
+    "lastModified": "2025-08-31T17:40:08.693446Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/guitarra_interativa_com_makey_makey/1.jpg",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/guitarra_interativa_com_makey_makey/2.jpg",
+      "alt": "Imagem do projeto - 2",
+      "caption": "Imagem do projeto",
+      "order": 2
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

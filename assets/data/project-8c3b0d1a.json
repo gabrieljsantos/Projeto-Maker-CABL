@@ -1,0 +1,45 @@
+{
+  "id": "8c3b0d1a",
+  "title": "Pac   Blue Pen (Caneta Azul   O Jogo)",
+  "slug": "pac---blue-pen-(caneta-azul---o-jogo)",
+  "description": "Projeto Pac   Blue Pen (Caneta Azul   O Jogo) desenvolvido pelos alunos do CABL.",
+  "category": "Geral",
+  "status": "active",
+  "featured": true,
+  "dates": {
+    "created": "2025-08-31T13:57:48.574094Z",
+    "lastModified": "2025-08-31T14:11:25.456928Z"
+  },
+  "media": [
+    {
+      "url": "/assets/projects/Pac - Blue Pen (Caneta Azul - O Jogo)/fre.png",
+      "type": "image",
+      "order": 1
+    },
+    {
+      "url": "/assets/projects/Pac - Blue Pen (Caneta Azul - O Jogo)/g54gh45.png",
+      "type": "image",
+      "order": 2
+    },
+    {
+      "url": "/assets/projects/Pac - Blue Pen (Caneta Azul - O Jogo)/r43frt34.png",
+      "type": "image",
+      "order": 3
+    }
+  ],
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/org/pac---blue-pen-(caneta-azul---o-jogo)"
+    },
+    {
+      "label": "Demo",
+      "url": "https://example.com/pac---blue-pen-(caneta-azul---o-jogo)"
+    }
+  ],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

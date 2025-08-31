@@ -1,0 +1,42 @@
+{
+  "id": "project-5eb32f7b",
+  "title": "Montando E Pintando Animais",
+  "slug": "montando-e-pintando-animais",
+  "description": "Projeto Montando E Pintando Animais desenvolvido pelos alunos do CABL.",
+  "category": "",
+  "status": "active",
+  "featured": true,
+  "dates": {
+    "created": "2025-08-31T13:06:58.911963Z",
+    "lastModified": "2025-08-31T13:54:07.506786Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Montando_e_pintando_Animais/img (1).jpg",
+      "alt": "Imagem do projeto - img (1)",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Montando_e_pintando_Animais/img (2).jpg",
+      "alt": "Imagem do projeto - img (2)",
+      "caption": "Imagem do projeto",
+      "order": 2
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Montando_e_pintando_Animais/img (3).jpg",
+      "alt": "Imagem do projeto - img (3)",
+      "caption": "Imagem do projeto",
+      "order": 3
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

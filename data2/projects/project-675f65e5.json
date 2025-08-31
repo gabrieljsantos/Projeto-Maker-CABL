@@ -1,0 +1,42 @@
+{
+  "id": "project-675f65e5",
+  "title": "Carro De Corrida",
+  "slug": "carro-de-corrida",
+  "description": "Projeto Carro De Corrida desenvolvido pelos alunos do CABL.",
+  "category": "",
+  "status": "active",
+  "featured": true,
+  "dates": {
+    "created": "2025-08-31T13:06:58.898709Z",
+    "lastModified": "2025-08-31T13:54:07.501778Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Carro_de_Corrida/img (1).jpg",
+      "alt": "Imagem do projeto - img (1)",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Carro_de_Corrida/img (2).gif",
+      "alt": "Imagem do projeto - img (2)",
+      "caption": "Imagem do projeto",
+      "order": 2
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Carro_de_Corrida/r34.gif",
+      "alt": "Imagem do projeto - r34",
+      "caption": "Imagem do projeto",
+      "order": 3
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

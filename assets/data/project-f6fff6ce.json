@@ -1,0 +1,40 @@
+{
+  "id": "f6fff6ce",
+  "title": "Guitarra_Interativa_Com_Makey_Makey",
+  "slug": "guitarra_interativa_com_makey_makey",
+  "description": "Projeto Guitarra_Interativa_Com_Makey_Makey desenvolvido pelos alunos do CABL.",
+  "category": "Geral",
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T13:57:48.569005Z",
+    "lastModified": "2025-08-31T14:11:25.321849Z"
+  },
+  "media": [
+    {
+      "url": "/assets/projects/guitarra_interativa_com_makey_makey/1.jpg",
+      "type": "image",
+      "order": 1
+    },
+    {
+      "url": "/assets/projects/guitarra_interativa_com_makey_makey/2.jpg",
+      "type": "image",
+      "order": 2
+    }
+  ],
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/org/guitarra_interativa_com_makey_makey"
+    },
+    {
+      "label": "Demo",
+      "url": "https://example.com/guitarra_interativa_com_makey_makey"
+    }
+  ],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

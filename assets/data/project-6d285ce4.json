@@ -1,0 +1,50 @@
+{
+  "id": "6d285ce4",
+  "title": "Do_Tinkercad_Ate_A_Arte_Ludica",
+  "slug": "do_tinkercad_ate_a_arte_ludica",
+  "description": "Projeto Do_Tinkercad_Ate_A_Arte_Ludica desenvolvido pelos alunos do CABL.",
+  "category": "Geral",
+  "status": "active",
+  "featured": true,
+  "dates": {
+    "created": "2025-08-31T13:57:48.569005Z",
+    "lastModified": "2025-08-31T14:11:25.240768Z"
+  },
+  "media": [
+    {
+      "url": "/assets/projects/Do_Tinkercad_ate_a_arte_ludica/1.png",
+      "type": "image",
+      "order": 1
+    },
+    {
+      "url": "/assets/projects/Do_Tinkercad_ate_a_arte_ludica/2.png",
+      "type": "image",
+      "order": 2
+    },
+    {
+      "url": "/assets/projects/Do_Tinkercad_ate_a_arte_ludica/3.png",
+      "type": "image",
+      "order": 3
+    },
+    {
+      "url": "/assets/projects/Do_Tinkercad_ate_a_arte_ludica/4.png",
+      "type": "image",
+      "order": 4
+    }
+  ],
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/org/do_tinkercad_ate_a_arte_ludica"
+    },
+    {
+      "label": "Demo",
+      "url": "https://example.com/do_tinkercad_ate_a_arte_ludica"
+    }
+  ],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

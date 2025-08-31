@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "lastUpdate": "2025-08-31T17:40:08.703473Z",
+    "totalProjects": 11,
+    "categories": [
+      "Carrinhos",
+      "Makey Makey",
+      "Scratch"
+    ],
+    "featuredCount": 0,
+    "generator": "Python Project Generator v2.0"
+  },
+  "projects": [
+    {
+      "id": "project-675f65e5",
+      "slug": "carro_de_corrida",
+      "title": "Carro De Corrida",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T17:40:08.685972Z"
+    },
+    {
+      "id": "project-6d285ce4",
+      "slug": "do_tinkercad_ate_a_arte_ludica",
+      "title": "Do Tinkercad Ate A Arte Ludica",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T17:40:08.689932Z"
+    },
+    {
+      "id": "project-d9c888c0",
+      "slug": "f15_tema_textura_do_starscream",
+      "title": "F15 Tema Textura Do Starscream",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T17:40:08.690736Z"
+    },
+    {
+      "id": "project-b7186599",
+      "slug": "f1_funcional_de_papelao",
+      "title": "F1 Funcional De Papelao",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T17:40:08.692746Z"
+    },
+    {
+      "id": "project-f6fff6ce",
+      "slug": "guitarra_interativa_com_makey_makey",
+      "title": "Guitarra Interativa Com Makey Makey",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T17:40:08.693446Z"
+    },
+    {
+      "id": "project-52bf09c9",
+      "slug": "minecraft_imersivo",
+      "title": "Minecraft Imersivo",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T17:40:08.693446Z"
+    },
+    {
+      "id": "project-5eb32f7b",
+      "slug": "montando_e_pintando_animais",
+      "title": "Montando E Pintando Animais",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T17:40:08.693446Z"
+    },
+    {
+      "id": "project-b5e08fe4",
+      "slug": "natureza_com_coleta_seletiva",
+      "title": "Natureza Com Coleta Seletiva",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T17:40:08.697286Z"
+    },
+    {
+      "id": "project-8c3b0d1a",
+      "slug": "pac---blue-pen-(caneta-azul---o-jogo)",
+      "title": "Pac - Blue Pen (Caneta Azul - O Jogo)",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T17:40:08.698556Z"
+    },
+    {
+      "id": "project-cd0e2ae8",
+      "slug": "piano_interativo_com_makey_makey",
+      "title": "Piano Interativo Com Makey Makey",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-08-31T17:40:08.699365Z"
+    },
+    {
+      "id": "project-1a951d04",
+      "slug": "pista_de_corrida_com_carrinhos_e_sistema_de_detecção_digital",
+      "title": "Pista De Corrida Com Carrinhos E Sistema De Detecção Digital",
+      "status": "active",
+      "featured": false,
+      "category": [
+        {
+          "0": "Makey Makey",
+          "1": "Scratch",
+          "2": "Carrinhos"
+        }
+      ],
+      "lastModified": "2025-08-31T17:40:08.701463Z"
+    }
+  ]
+}

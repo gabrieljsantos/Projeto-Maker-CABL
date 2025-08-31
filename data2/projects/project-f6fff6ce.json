@@ -1,0 +1,35 @@
+{
+  "id": "project-f6fff6ce",
+  "title": "Guitarra Interativa Com Makey Makey",
+  "slug": "guitarra-interativa-com-makey-makey",
+  "description": "Projeto Guitarra Interativa Com Makey Makey desenvolvido pelos alunos do CABL.",
+  "category": "",
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T13:06:58.908968Z",
+    "lastModified": "2025-08-31T13:54:07.506786Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/guitarra_interativa_com_makey_makey/1.jpg",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/guitarra_interativa_com_makey_makey/2.jpg",
+      "alt": "Imagem do projeto - 2",
+      "caption": "Imagem do projeto",
+      "order": 2
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "project-b5e08fe4",
+  "title": "Natureza Com Coleta Seletiva",
+  "slug": "natureza-com-coleta-seletiva",
+  "description": "Projeto Natureza Com Coleta Seletiva desenvolvido pelos alunos do CABL.",
+  "category": "",
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T13:06:58.912958Z",
+    "lastModified": "2025-08-31T13:54:07.510909Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Natureza_com_Coleta_Seletiva/rft7w3y7w4e.jpg",
+      "alt": "Imagem do projeto - rft7w3y7w4e",
+      "caption": "Imagem do projeto",
+      "order": 1
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

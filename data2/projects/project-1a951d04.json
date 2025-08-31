@@ -1,0 +1,62 @@
+{
+  "id": "project-1a951d04",
+  "title": "Pista De Corrida Com Carrinhos E Sistema De Detecção Digital",
+  "slug": "pista-de-corrida-com-carrinhos-e-sistema-de-deteccao-digital",
+  "description": "O projeto consiste em uma pista de corrida de 4 vias, construída com canos de PVC cortados ao meio, posicionados em declive para permitir que carrinhos deslizem apenas pela ação da gravidade.\nNa extremidade inferior de cada via foi instalado um sensor de contato simples conectado ao Makey Makey, que identifica qual carrinho chegou primeiro. O Makey Makey envia o sinal para um programa desenvolvido no Scratch, que processa o resultado e exibe em tela o vencedor da corrida de forma automática e interativa.\nO sistema une a parte física (estrutura em PVC e carrinhos) com a parte digital (Makey Makey + Scratch), proporcionando uma atividade lúdica e educativa, que pode ser usada para demonstrar conceitos de:\n- Gravidade e movimento em planos inclinados\n- Velocidade e competição\n- Interação entre hardware e software\n\nMateriais principais:\n- Canos de PVC cortados para formar 4 pistas paralelas\n- Suporte para manter a pista inclinada\n- Carrinhos pequenos de brinquedo\n- Makey Makey\n- Computador com Scratch instalado\n- Fios condutores e contatos metálicos nas extremidades da pista\n\nFuncionamento resumido:\nOs carrinhos são posicionados no início das pistas. Ao serem soltos, descem em queda livre pela estrutura. O primeiro carrinho que atingir a extremidade aciona o sensor. O Makey Makey envia o sinal para o Scratch. O programa no Scratch exibe o resultado da corrida, mostrando o carrinho vencedor.",
+  "category": "",
+  "status": "active",
+  "featured": true,
+  "dates": {
+    "created": "2025-08-31T13:06:58.918429Z",
+    "lastModified": "2025-08-31T13:51:24.534806Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/1.jpg",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/2.jpg",
+      "alt": "Imagem do projeto - 2",
+      "caption": "Imagem do projeto",
+      "order": 2
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/3.jpg",
+      "alt": "Imagem do projeto - 3",
+      "caption": "Imagem do projeto",
+      "order": 3
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/5.png",
+      "alt": "Imagem do projeto - 5",
+      "caption": "Imagem do projeto",
+      "order": 4
+    }
+  ],
+  "links": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/exemplo/projeto"
+    },
+    {
+      "name": "Demo",
+      "url": "https://exemplo.com/demo"
+    },
+    {
+      "name": "Documentação",
+      "url": "https://exemplo.com/docs"
+    }
+  ],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

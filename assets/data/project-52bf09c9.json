@@ -1,0 +1,40 @@
+{
+  "id": "52bf09c9",
+  "title": "Minecraft_Imersivo",
+  "slug": "minecraft_imersivo",
+  "description": "Projeto Minecraft_Imersivo desenvolvido pelos alunos do CABL.",
+  "category": "Geral",
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T13:57:48.574094Z",
+    "lastModified": "2025-08-31T14:11:25.349610Z"
+  },
+  "media": [
+    {
+      "url": "/assets/projects/Minecraft_imersivo/1.jpg",
+      "type": "image",
+      "order": 1
+    },
+    {
+      "url": "/assets/projects/Minecraft_imersivo/2.jpg",
+      "type": "image",
+      "order": 2
+    }
+  ],
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/org/minecraft_imersivo"
+    },
+    {
+      "label": "Demo",
+      "url": "https://example.com/minecraft_imersivo"
+    }
+  ],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "project-5eb32f7b",
+  "title": "Montando E Pintando Animais",
+  "slug": "montando_e_pintando_animais",
+  "description": "",
+  "category": [],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T17:31:11.382443Z",
+    "lastModified": "2025-08-31T17:40:08.693446Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Montando_e_pintando_Animais/img (1).jpg",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Montando_e_pintando_Animais/img (2).jpg",
+      "alt": "Imagem do projeto - 2",
+      "caption": "Imagem do projeto",
+      "order": 2
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Montando_e_pintando_Animais/img (3).jpg",
+      "alt": "Imagem do projeto - 3",
+      "caption": "Imagem do projeto",
+      "order": 3
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

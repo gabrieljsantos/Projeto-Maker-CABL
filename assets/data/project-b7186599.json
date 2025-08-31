@@ -1,0 +1,29 @@
+{
+  "id": "b7186599",
+  "title": "F1_Funcional_De_Papelao",
+  "slug": "f1_funcional_de_papelao",
+  "description": "Projeto F1_Funcional_De_Papelao desenvolvido pelos alunos do CABL.",
+  "category": "Geral",
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T13:57:48.569005Z",
+    "lastModified": "2025-08-31T14:11:25.294341Z"
+  },
+  "media": [],
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/org/f1_funcional_de_papelao"
+    },
+    {
+      "label": "Demo",
+      "url": "https://example.com/f1_funcional_de_papelao"
+    }
+  ],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

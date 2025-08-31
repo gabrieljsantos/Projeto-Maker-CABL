@@ -1,0 +1,28 @@
+{
+  "id": "project-b7186599",
+  "title": "F1 Funcional De Papelao",
+  "slug": "f1-funcional-de-papelao",
+  "description": "Projeto F1 Funcional De Papelao desenvolvido pelos alunos do CABL.",
+  "category": [],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T13:06:58.907502Z",
+    "lastModified": "2025-08-31T13:54:07.505109Z"
+  },
+  "media": [
+    {
+      "type": "video",
+      "url": "https://youtube.com/shorts/X2J1ezuxQSE?si=8JtDxYIz2yvxPUyx",
+      "alt": "Vídeo do projeto F1 Funcional",
+      "caption": "Vídeo do projeto",
+      "order": 1
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

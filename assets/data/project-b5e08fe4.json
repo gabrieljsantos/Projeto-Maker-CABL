@@ -1,0 +1,35 @@
+{
+  "id": "b5e08fe4",
+  "title": "Natureza_Com_Coleta_Seletiva",
+  "slug": "natureza_com_coleta_seletiva",
+  "description": "Projeto Natureza_Com_Coleta_Seletiva desenvolvido pelos alunos do CABL.",
+  "category": "Geral",
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T13:57:48.574094Z",
+    "lastModified": "2025-08-31T14:11:25.418318Z"
+  },
+  "media": [
+    {
+      "url": "/assets/projects/Natureza_com_Coleta_Seletiva/rft7w3y7w4e.jpg",
+      "type": "image",
+      "order": 1
+    }
+  ],
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/org/natureza_com_coleta_seletiva"
+    },
+    {
+      "label": "Demo",
+      "url": "https://example.com/natureza_com_coleta_seletiva"
+    }
+  ],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

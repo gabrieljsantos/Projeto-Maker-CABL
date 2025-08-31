@@ -1,0 +1,42 @@
+{
+  "id": "project-8c3b0d1a",
+  "title": "Pac - Blue Pen (Caneta Azul - O Jogo)",
+  "slug": "pac---blue-pen-(caneta-azul---o-jogo)",
+  "description": "",
+  "category": [],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T17:31:11.382443Z",
+    "lastModified": "2025-08-31T17:40:08.698556Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Pac - Blue Pen (Caneta Azul - O Jogo)/fre.png",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Pac - Blue Pen (Caneta Azul - O Jogo)/g54gh45.png",
+      "alt": "Imagem do projeto - 2",
+      "caption": "Imagem do projeto",
+      "order": 2
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Pac - Blue Pen (Caneta Azul - O Jogo)/r43frt34.png",
+      "alt": "Imagem do projeto - 3",
+      "caption": "Imagem do projeto",
+      "order": 3
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "project-d9c888c0",
+  "title": "F15 Tema Textura Do Starscream",
+  "slug": "f15_tema_textura_do_starscream",
+  "description": "",
+  "category": [],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T17:31:11.377811Z",
+    "lastModified": "2025-08-31T17:40:08.690736Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/F15_Tema_Textura_do_Starscream/1.jpg",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/F15_Tema_Textura_do_Starscream/322423rf.jpg",
+      "alt": "Imagem do projeto - 2",
+      "caption": "Imagem do projeto",
+      "order": 2
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

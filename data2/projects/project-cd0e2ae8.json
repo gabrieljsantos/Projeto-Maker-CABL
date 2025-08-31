@@ -1,0 +1,28 @@
+{
+  "id": "project-cd0e2ae8",
+  "title": "Piano Interativo Com Makey Makey",
+  "slug": "piano-interativo-com-makey-makey",
+  "description": "Projeto Piano Interativo Com Makey Makey desenvolvido pelos alunos do CABL.",
+  "category": "",
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T13:06:58.916439Z",
+    "lastModified": "2025-08-31T13:54:07.510909Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/piano_interativo_com_makey_makey/1.jpg",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

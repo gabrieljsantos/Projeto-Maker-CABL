@@ -1,0 +1,28 @@
+{
+  "id": "project-675f65e5",
+  "title": "Carro De Corrida",
+  "slug": "carro_de_corrida",
+  "description": "",
+  "category": [],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T17:31:11.371056Z",
+    "lastModified": "2025-08-31T17:40:08.685972Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Carro_de_Corrida/img (1).jpg",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

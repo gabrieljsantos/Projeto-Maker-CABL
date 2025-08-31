@@ -235,6 +235,81 @@ header::before {
   font-size: 1rem;
 }
 
+/* Seção de filtros */
+.filter-section {
+  background: linear-gradient(135deg, rgba(58, 134, 255, 0.1) 0%, rgba(6, 255, 165, 0.1) 100%);
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.filter-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.filter-container h4 {
+  margin: 0 0 1rem 0;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid rgba(255,255,255,0.2);
+  background: rgba(0,0,0,0.3);
+  color: #d0d0d0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: inherit;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.filter-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #3a86ff 0%, #06ffa5 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.filter-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.filter-btn:hover {
+  border-color: rgba(58, 134, 255, 0.5);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(58, 134, 255, 0.2);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #3a86ff 0%, #06ffa5 100%);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 16px rgba(58, 134, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.filter-btn.active::before {
+  opacity: 1;
+}
+
 main {
   padding: 2rem;
   max-width: 1400px;
@@ -294,15 +369,71 @@ main {
     0 0 0 1px rgba(255,255,255,0.1);
 }
 
+/* Projeto em destaque */
+.project-card.featured {
+  border: 2px solid rgba(255, 193, 7, 0.4);
+  box-shadow: 
+    0 8px 32px rgba(0,0,0,0.4),
+    0 0 20px rgba(255, 193, 7, 0.2);
+  position: relative;
+}
+
+.project-card.featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ffc107, #ff8f00);
+  z-index: 1;
+}
+
 .project-title {
   font-size: 1.75rem;
   font-weight: 700;
   color: #fff;
   text-align: center;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem 1rem 2rem;
   background: linear-gradient(135deg, rgba(58, 134, 255, 0.1) 0%, rgba(6, 255, 165, 0.1) 100%);
   border-bottom: 1px solid rgba(255,255,255,0.1);
   margin: 0;
+}
+
+/* Badges de projeto */
+.project-badges {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 2rem 1rem 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-badge, .featured-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.category-badge {
+  background: rgba(58, 134, 255, 0.2);
+  color: #3a86ff;
+  border: 1px solid rgba(58, 134, 255, 0.3);
+}
+
+.featured-badge {
+  background: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
 }
 
 .content-wrapper {
@@ -415,43 +546,56 @@ main {
 }
 
 .text-content {
-  /* Para o texto fluir ao redor do carrossel */
-  overflow: hidden; /* garante que o container englobe o conteúdo flutuante */
-  font-family: Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.5;
+  overflow: hidden;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.carousel-container {
-  float: left; /* Faz o carrossel ficar "flutuando" à esquerda do texto */
-  width: 600px; /* largura fixa ou máxima do carrossel */
-  margin-right: 20px; /* espaço entre carrossel e texto */
-  margin-bottom: 10px; /* para dar espaçamento quando o texto for para baixo */
-  box-sizing: border-box;
-}
-
-/* O texto ficará naturalmente do lado direito do carrossel,
-   e quando for longo, quebrará para baixo. */
 .project-description {
-  /* sem float aqui, ocupa o resto do espaço à direita */
+  color: #d0d0d0;
   text-align: justify;
+  margin-bottom: 1.5rem;
 }
 
-/* Para telas pequenas, podemos fazer o carrossel ficar em cima do texto */
-@media (max-width: 600px) {
-  .carousel-container {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
+/* Container de tecnologias */
+.technologies-container {
+  margin: 1.5rem 0;
+  clear: both;
+}
+
+.technologies-container h4 {
+  margin: 0 0 0.8rem 0;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-item {
+  background: linear-gradient(135deg, #3a86ff 0%, #06ffa5 100%);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-2px);
 }
 
 .links-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  clear: both; /* Garante que os botões fiquem abaixo do float */
+  clear: both;
   padding-top: 1rem;
 }
 
@@ -499,10 +643,22 @@ main {
 .error-message {
   background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
   color: white;
-  padding: 1rem;
-  border-radius: 8px;
+  padding: 1.5rem;
+  border-radius: 12px;
   text-align: center;
-  margin: 1rem 0;
+  margin: 2rem 0;
+  box-shadow: 0 4px 16px rgba(255, 71, 87, 0.3);
+}
+
+.no-projects {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  padding: 3rem;
+  font-size: 1.1rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
 }
 
 /* Layouts responsivos melhorados */
@@ -552,11 +708,15 @@ main {
   
   .project-title {
     font-size: 1.5rem;
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem 1.5rem 0.75rem 1.5rem;
   }
   
   .content-wrapper {
     padding: 1.5rem;
+  }
+  
+  .filter-section {
+    padding: 1.25rem 1.5rem;
   }
 }
 
@@ -592,6 +752,27 @@ main {
   
   .links-container, .institution-links {
     justify-content: center;
+  }
+  
+  .filter-buttons {
+    justify-content: center;
+  }
+  
+  .filter-btn {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.2rem;
+  }
+  
+  .project-badges {
+    justify-content: center;
+  }
+  
+  .card-informacoes {
+    margin: 1rem;
+  }
+  
+  .info-body {
+    padding: 1.5rem;
   }
 }
 

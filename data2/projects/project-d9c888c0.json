@@ -1,0 +1,35 @@
+{
+  "id": "project-d9c888c0",
+  "title": "F15 Tema Textura Do Starscream",
+  "slug": "f15-tema-textura-do-starscream",
+  "description": "Projeto F15 Tema Textura Do Starscream desenvolvido pelos alunos do CABL.",
+  "category": "",
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T13:06:58.906055Z",
+    "lastModified": "2025-08-31T13:54:07.504517Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/F15_Tema_Textura_do_Starscream/1.jpg",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/F15_Tema_Textura_do_Starscream/322423rf.jpg",
+      "alt": "Imagem do projeto - 322423rf",
+      "caption": "Imagem do projeto",
+      "order": 2
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

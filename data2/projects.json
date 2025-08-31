@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "lastUpdate": "2025-08-31T13:54:07.515333Z",
+    "totalProjects": 11,
+    "categories": [
+      ""
+    ],
+    "featuredCount": 5,
+    "generator": "Python Project Generator v2.0"
+  },
+  "projects": [
+    {
+      "id": "project-675f65e5",
+      "slug": "carro-de-corrida",
+      "title": "Carro De Corrida",
+      "status": "active",
+      "featured": true,
+      "category": "",
+      "lastModified": "2025-08-31T13:54:07.501778Z"
+    },
+    {
+      "id": "project-6d285ce4",
+      "slug": "do-tinkercad-ate-a-arte-ludica",
+      "title": "Do Tinkercad Ate A Arte Ludica",
+      "status": "active",
+      "featured": true,
+      "category": "",
+      "lastModified": "2025-08-31T13:54:07.501778Z"
+    },
+    {
+      "id": "project-5eb32f7b",
+      "slug": "montando-e-pintando-animais",
+      "title": "Montando E Pintando Animais",
+      "status": "active",
+      "featured": true,
+      "category": "",
+      "lastModified": "2025-08-31T13:54:07.506786Z"
+    },
+    {
+      "id": "project-8c3b0d1a",
+      "slug": "pac-blue-pen-caneta-azul-o-jogo",
+      "title": "Pac Blue Pen (caneta Azul O Jogo)",
+      "status": "active",
+      "featured": true,
+      "category": "",
+      "lastModified": "2025-08-31T13:54:07.510909Z"
+    },
+    {
+      "id": "project-1a951d04",
+      "slug": "pista-de-corrida-com-carrinhos-e-sistema-de-deteco-digital",
+      "title": "Pista De Corrida Com Carrinhos E Sistema De Detecção Digital",
+      "status": "active",
+      "featured": true,
+      "category": "",
+      "lastModified": "2025-08-31T13:54:07.515333Z"
+    },
+    {
+      "id": "project-b7186599",
+      "slug": "f1-funcional-de-papelao",
+      "title": "F1 Funcional De Papelao",
+      "status": "active",
+      "featured": false,
+      "category": "",
+      "lastModified": "2025-08-31T13:54:07.505109Z"
+    },
+    {
+      "id": "project-d9c888c0",
+      "slug": "f15-tema-textura-do-starscream",
+      "title": "F15 Tema Textura Do Starscream",
+      "status": "active",
+      "featured": false,
+      "category": "",
+      "lastModified": "2025-08-31T13:54:07.504517Z"
+    },
+    {
+      "id": "project-f6fff6ce",
+      "slug": "guitarra-interativa-com-makey-makey",
+      "title": "Guitarra Interativa Com Makey Makey",
+      "status": "active",
+      "featured": false,
+      "category": "",
+      "lastModified": "2025-08-31T13:54:07.506786Z"
+    },
+    {
+      "id": "project-52bf09c9",
+      "slug": "minecraft-imersivo",
+      "title": "Minecraft Imersivo",
+      "status": "active",
+      "featured": false,
+      "category": "",
+      "lastModified": "2025-08-31T13:54:07.506786Z"
+    },
+    {
+      "id": "project-b5e08fe4",
+      "slug": "natureza-com-coleta-seletiva",
+      "title": "Natureza Com Coleta Seletiva",
+      "status": "active",
+      "featured": false,
+      "category": "",
+      "lastModified": "2025-08-31T13:54:07.510909Z"
+    },
+    {
+      "id": "project-cd0e2ae8",
+      "slug": "piano-interativo-com-makey-makey",
+      "title": "Piano Interativo Com Makey Makey",
+      "status": "active",
+      "featured": false,
+      "category": "",
+      "lastModified": "2025-08-31T13:54:07.510909Z"
+    }
+  ]
+}

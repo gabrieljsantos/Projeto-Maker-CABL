@@ -1,0 +1,28 @@
+{
+  "id": "project-b5e08fe4",
+  "title": "Natureza Com Coleta Seletiva",
+  "slug": "natureza_com_coleta_seletiva",
+  "description": "",
+  "category": [],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T17:31:11.382443Z",
+    "lastModified": "2025-08-31T17:40:08.697286Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Natureza_com_Coleta_Seletiva/rft7w3y7w4e.jpg",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

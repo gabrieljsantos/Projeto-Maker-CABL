@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projetos Maker</title>
+  <title>Projetos Maker CABL</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header com imagem -->
   <header>
     <div class="header-content">
       <div class="header-text">
@@ -19,17 +18,16 @@
     </div>
   </header>
 
-  <!-- Seção sobre a instituição -->
   <section class="institution-section">
     <div class="institution-container">
       <div class="institution-content">
         <h2>Sobre o CABL</h2>
         <p class="institution-description">
-          O Colégio Antônio Barreto de Lima (CABL) é ....
+          O Colégio Antônio Barreto de Lima (CABL) é uma instituição educacional comprometida com a inovação e o desenvolvimento integral dos estudantes através da educação maker e tecnológica.
+        </p>
         <p class="institution-description">
           O projeto está dividido em várias etapas. Primeiramente, concentramo-nos na preparação para um letramento tecnológico abrangente, desde a familiarização com o computador até o seu manuseio. Inicialmente, foram abordados conceitos básicos, culminando na introdução à lógica de programação e à programação em blocos. As principais competências adquiridas pelos alunos incluem: navegação na internet, compreensão básica de lógica de programação, uso da impressora 3D, modelagem 3D, princípios do movimento maker, montagem de circuitos simples (incluindo conexões com fios, contatos e interruptores). Além disso, é enfatizada a capacidade dos alunos de analisar problemas e propor soluções engenhosas utilizando os materiais disponíveis em sala de aula. Na segunda parte do projeto, os alunos não apenas desenvolvem suas ideias, mas também as executam.
-          <br>
-          <br>
+          <br><br>
           Em seguida, serão apresentados todos os trabalhos realizados, desenvolvidos pelos alunos e professores envolvidos no projeto. Alguns desses projetos carregam um toque especial - você sabe do que estou falando, não é? Sim, das imperfeições, dos borrões, do carinho, do cuidado ingênuo e da sinceridade que só uma criança consegue imprimir em algo feito por ela. Por isso, sinto um imenso orgulho em participar desta etapa da vida de meus alunos, ajudando-os a construir algo verdadeiramente significativo.
         </p>
         <div class="institution-links">
@@ -45,7 +43,6 @@
     </div>
   </section>
 
-  <!-- Card de informações -->
   <div class="card-informacoes">
     <div class="info-header">
       <h3>Informações dos Projetos</h3>
@@ -58,17 +55,27 @@
           <span id="total-projects">Carregando...</span>
         </div>
         <div class="info-col">
-          <label>Áreas de Atuação:</label>
-          <span>Tecnologia, Educação, Inovação</span>
-        </div>
-        <div class="info-col">
           <label>Última Atualização:</label>
-          <span id="last-update">2025</span>
+          <span id="last-update">Carregando...</span>
         </div>
         <div class="info-col">
           <label>Status:</label>
-          <span>Ativo</span>
+          <span id="project-status">Ativo</span>
         </div>
+        <div class="info-col">
+          <label>Projetos em Destaque:</label>
+          <span id="featured-count">Carregando...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="filter-section">
+    <div class="filter-container">
+      <h4>Filtrar por categoria:</h4>
+      <div class="filter-buttons" id="filter-buttons">
+        <!-- Filtros serão gerados dinamicamente pelo JavaScript -->
+        <div class="filter-loading">Carregando filtros...</div>
       </div>
     </div>
   </div>
@@ -78,16 +85,9 @@
   </main>
   
   <footer>
-    <p>&copy; 2025 Gabriel J Santos - CABL</p>
+    <p>&copy; 2025 Gabriel J Santos - CABL. Todos os direitos reservados.</p>
   </footer>
 
   <script src="projectLoader.js"></script>
-  <script>
-    // Inicializar quando a página carregar
-    document.addEventListener("DOMContentLoaded", () => {
-      const loader = new ProjectLoader();
-      loader.loadProjects();
-    });
-  </script>
 </body>
 </html>

@@ -1,0 +1,49 @@
+{
+  "id": "project-6d285ce4",
+  "title": "Do Tinkercad Ate A Arte Ludica",
+  "slug": "do_tinkercad_ate_a_arte_ludica",
+  "description": "",
+  "category": [],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-08-31T17:31:11.376669Z",
+    "lastModified": "2025-08-31T17:40:08.689932Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Do_Tinkercad_ate_a_arte_ludica/1.png",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Do_Tinkercad_ate_a_arte_ludica/2.png",
+      "alt": "Imagem do projeto - 2",
+      "caption": "Imagem do projeto",
+      "order": 2
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Do_Tinkercad_ate_a_arte_ludica/3.png",
+      "alt": "Imagem do projeto - 3",
+      "caption": "Imagem do projeto",
+      "order": 3
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Do_Tinkercad_ate_a_arte_ludica/4.png",
+      "alt": "Imagem do projeto - 4",
+      "caption": "Imagem do projeto",
+      "order": 4
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}
