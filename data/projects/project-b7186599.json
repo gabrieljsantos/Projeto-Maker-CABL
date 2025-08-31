@@ -2,15 +2,30 @@
   "id": "project-b7186599",
   "title": "F1 Funcional De Papelao",
   "slug": "f1_funcional_de_papelao",
-  "description": "",
+  "description": "Projeto de um carro de Fórmula 1 funcional, cujo molde foi cuidadosamente desenvolvido pelo professor e cortado com precisão na máquina CNC a laser. Após o corte, os alunos participaram ativamente da montagem e personalização do modelo, aplicando criatividade e aprendizado prático em cada etapa",
   "category": [],
   "status": "active",
   "featured": false,
   "dates": {
     "created": "2025-08-31T17:31:11.377811Z",
-    "lastModified": "2025-08-31T17:40:08.692746Z"
+    "lastModified": "2025-08-31T17:55:45.596872Z"
   },
-  "media": [],
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/F1_funcional_de_papelao/IMG-20250331-WA0016.jpg",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "video",
+      "url": "https://youtube.com/shorts/X2J1ezuxQSE?si=8JtDxYIz2yvxPUyx",
+      "alt": "Vídeo do projeto F1 Funcional",
+      "caption": "Vídeo do projeto",
+      "order": 1
+    }
+  ],
   "links": [],
   "metrics": {
     "views": 0,

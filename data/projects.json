@@ -1,12 +1,12 @@
 {
   "metadata": {
     "version": "2.0",
-    "lastUpdate": "2025-08-31T17:40:08.703473Z",
+    "lastUpdate": "2025-08-31T17:55:45.607184Z",
     "totalProjects": 11,
     "categories": [
-      "Carrinhos",
       "Makey Makey",
-      "Scratch"
+      "Scratch",
+      "Carrinhos"
     ],
     "featuredCount": 0,
     "generator": "Python Project Generator v2.0"
@@ -19,7 +19,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:40:08.685972Z"
+      "lastModified": "2025-08-31T17:55:45.592885Z"
     },
     {
       "id": "project-6d285ce4",
@@ -28,7 +28,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:40:08.689932Z"
+      "lastModified": "2025-08-31T17:55:45.593874Z"
     },
     {
       "id": "project-d9c888c0",
@@ -37,7 +37,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:40:08.690736Z"
+      "lastModified": "2025-08-31T17:55:45.595873Z"
     },
     {
       "id": "project-b7186599",
@@ -46,7 +46,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:40:08.692746Z"
+      "lastModified": "2025-08-31T17:55:45.596872Z"
     },
     {
       "id": "project-f6fff6ce",
@@ -55,7 +55,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:40:08.693446Z"
+      "lastModified": "2025-08-31T17:55:45.598870Z"
     },
     {
       "id": "project-52bf09c9",
@@ -64,7 +64,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:40:08.693446Z"
+      "lastModified": "2025-08-31T17:55:45.600870Z"
     },
     {
       "id": "project-5eb32f7b",
@@ -73,7 +73,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:40:08.693446Z"
+      "lastModified": "2025-08-31T17:55:45.601898Z"
     },
     {
       "id": "project-b5e08fe4",
@@ -82,7 +82,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:40:08.697286Z"
+      "lastModified": "2025-08-31T17:55:45.601898Z"
     },
     {
       "id": "project-8c3b0d1a",
@@ -91,7 +91,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:40:08.698556Z"
+      "lastModified": "2025-08-31T17:55:45.603361Z"
     },
     {
       "id": "project-cd0e2ae8",
@@ -100,7 +100,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T17:40:08.699365Z"
+      "lastModified": "2025-08-31T17:55:45.604723Z"
     },
     {
       "id": "project-1a951d04",
@@ -115,7 +115,7 @@
           "2": "Carrinhos"
         }
       ],
-      "lastModified": "2025-08-31T17:40:08.701463Z"
+      "lastModified": "2025-08-31T17:55:45.605751Z"
     }
   ]
 }
