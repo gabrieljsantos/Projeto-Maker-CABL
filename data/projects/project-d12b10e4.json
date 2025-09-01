@@ -2,8 +2,13 @@
   "id": "project-d12b10e4",
   "title": "Casa Com Iluminação",
   "slug": "casa-com-iluminação",
-  "description": "",
-  "category": [],
+  "description": "Neste projeto, os alunos construíram uma maquete de uma casa em miniatura. A frente da casa possui um LED que simula a iluminação real, trazendo um efeito visual realista. O projeto combina elementos de design, eletrônica básica e criatividade para representar uma casa funcional em miniatura.",
+  "category": [
+    {
+      "0": "Maquete",
+      "1": "LED"
+    }
+  ],
   "status": "active",
   "featured": false,
   "dates": {

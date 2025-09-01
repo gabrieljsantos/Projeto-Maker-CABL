@@ -4,7 +4,11 @@
   "slug": "piano_interativo_com_makey_makey",
   "description": "Projeto feito com base de EVA e teclas de papel alumínio conectadas ao Makey Makey. Ao tocar nas teclas, o circuito fecha e o sinal é enviado para o computador, que reproduz sons musicais via programa no Scratch, funcionando como um piano simples e educativo.\n",
   "category": [
-    {}
+    {
+      "0": "Scratch",
+      "1": "Musica",
+      "2": "Makey Makey"
+    }
   ],
   "status": "active",
   "featured": false,
