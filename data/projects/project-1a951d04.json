@@ -12,53 +12,53 @@
     }
   ],
   "status": "active",
-  "featured": true,
+  "featured": false,
   "dates": {
     "created": "2025-08-31T13:06:58.918429Z",
-    "lastModified": "2025-08-31T18:47:27.687161Z"
+    "lastModified": "2025-09-01T16:23:39.359197Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/1.jpg",
-      "alt": "Imagem do projeto - 13",
+      "alt": "Imagem do projeto - 37",
       "caption": "Imagem do projeto",
-      "order": 13
+      "order": 37
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/2.jpg",
-      "alt": "Imagem do projeto - 14",
+      "alt": "Imagem do projeto - 38",
       "caption": "Imagem do projeto",
-      "order": 14
+      "order": 38
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/3.jpg",
-      "alt": "Imagem do projeto - 15",
+      "alt": "Imagem do projeto - 39",
       "caption": "Imagem do projeto",
-      "order": 15
+      "order": 39
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/5.png",
-      "alt": "Imagem do projeto - 16",
+      "alt": "Imagem do projeto - 40",
       "caption": "Imagem do projeto",
-      "order": 16
+      "order": 40
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/gh45tbrt.png",
-      "alt": "Imagem do projeto - 17",
+      "alt": "Imagem do projeto - 41",
       "caption": "Imagem do projeto",
-      "order": 17
+      "order": 41
     },
     {
       "type": "image",
       "url": "assets/projects/Pista_de_Corrida_com_Carrinhos_e_Sistema_de_Detecção_Digital/r43.png",
-      "alt": "Imagem do projeto - 18",
+      "alt": "Imagem do projeto - 42",
       "caption": "Imagem do projeto",
-      "order": 18
+      "order": 42
     }
   ],
   "links": [

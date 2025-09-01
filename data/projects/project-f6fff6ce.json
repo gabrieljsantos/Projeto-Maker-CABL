@@ -14,22 +14,22 @@
   "featured": false,
   "dates": {
     "created": "2025-08-31T17:31:11.377811Z",
-    "lastModified": "2025-08-31T18:47:27.678823Z"
+    "lastModified": "2025-09-01T16:23:39.353947Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/guitarra_interativa_com_makey_makey/1.jpg",
-      "alt": "Imagem do projeto - 5",
+      "alt": "Imagem do projeto - 13",
       "caption": "Imagem do projeto",
-      "order": 5
+      "order": 13
     },
     {
       "type": "image",
       "url": "assets/projects/guitarra_interativa_com_makey_makey/2.jpg",
-      "alt": "Imagem do projeto - 6",
+      "alt": "Imagem do projeto - 14",
       "caption": "Imagem do projeto",
-      "order": 6
+      "order": 14
     }
   ],
   "links": [],

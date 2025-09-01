@@ -1,6 +1,6 @@
 {
   "id": "project-d9c888c0",
-  "title": "Descrição do Projeto: F15 – Tema Starscream",
+  "title": "F15 Tema Textura Do Starscream",
   "slug": "f15_tema_textura_do_starscream",
   "description": "Neste projeto, os alunos montaram um molde de avião F15. Após a motagem, eles pintaram o avião com o tema dos Transformers, recriando a aparência do personagem Starscream. O trabalho envolveu habilidades de montagem, pintura e atenção aos detalhes, unindo criatividade e técnica.",
   "category": [
@@ -13,22 +13,22 @@
   "featured": false,
   "dates": {
     "created": "2025-08-31T17:31:11.377811Z",
-    "lastModified": "2025-08-31T18:47:27.675043Z"
+    "lastModified": "2025-09-01T16:23:39.349607Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/F15_Tema_Textura_do_Starscream/1.jpg",
-      "alt": "Imagem do projeto - 5",
+      "alt": "Imagem do projeto - 13",
       "caption": "Imagem do projeto",
-      "order": 5
+      "order": 13
     },
     {
       "type": "image",
       "url": "assets/projects/F15_Tema_Textura_do_Starscream/322423rf.jpg",
-      "alt": "Imagem do projeto - 6",
+      "alt": "Imagem do projeto - 14",
       "caption": "Imagem do projeto",
-      "order": 6
+      "order": 14
     }
   ],
   "links": [],

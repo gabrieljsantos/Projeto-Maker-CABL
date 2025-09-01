@@ -1,31 +1,87 @@
 {
   "metadata": {
     "version": "2.0",
-    "lastUpdate": "2025-08-31T18:47:27.687161Z",
-    "totalProjects": 15,
+    "lastUpdate": "2025-09-01T16:23:39.361252Z",
+    "totalProjects": 19,
     "categories": [
-      "Scratch",
-      "Pintura",
+      "Modelagem 3d",
+      "LED",
+      "Minecraft",
+      "Impressora 3d",
+      "Arte",
+      "Maquete",
       "Papelão",
       "Makey Makey",
-      "Carrinhos",
-      "Modelagem 3d",
-      "Impressora 3d",
+      "Musica",
+      "Meio Ambiente",
+      "Game",
       "Tinkercad",
-      "Minecraft"
+      "Scratch",
+      "Carrinhos",
+      "Movimento",
+      "CNC laser",
+      "Pintura"
     ],
     "featuredCount": 0,
     "generator": "Python Project Generator v2.0"
   },
   "projects": [
     {
+      "id": "project-8e18d720",
+      "slug": "avião-tubarão",
+      "title": "Avião Tubarão",
+      "status": "active",
+      "featured": false,
+      "category": [
+        {
+          "0": "Arte"
+        }
+      ],
+      "lastModified": "2025-09-01T16:23:39.337305Z"
+    },
+    {
+      "id": "project-95e22082",
+      "slug": "barata-eletronica",
+      "title": "Barata Eletronica",
+      "status": "active",
+      "featured": false,
+      "category": [
+        {
+          "0": "Movimento",
+          "1": "Arte"
+        }
+      ],
+      "lastModified": "2025-09-01T16:23:39.337305Z"
+    },
+    {
+      "id": "project-60830b8e",
+      "slug": "bateria-eletrônica",
+      "title": "Bateria Eletrônica",
+      "status": "active",
+      "featured": false,
+      "category": [
+        {
+          "0": "Scratch",
+          "1": "Musica",
+          "2": "Makey Makey"
+        }
+      ],
+      "lastModified": "2025-09-01T16:23:39.337305Z"
+    },
+    {
       "id": "project-acf7e043",
       "slug": "bunny-race",
       "title": "Bunny Race",
       "status": "active",
       "featured": false,
-      "category": [],
-      "lastModified": "2025-08-31T18:47:27.666254Z"
+      "category": [
+        {
+          "0": "Game",
+          "1": "Scratch",
+          "2": "Arte"
+        }
+      ],
+      "lastModified": "2025-09-01T16:23:39.337305Z"
     },
     {
       "id": "project-675f65e5",
@@ -33,8 +89,12 @@
       "title": "Carro De Corrida",
       "status": "active",
       "featured": false,
-      "category": [],
-      "lastModified": "2025-08-31T18:47:27.668615Z"
+      "category": [
+        {
+          "0": "Carrinhos"
+        }
+      ],
+      "lastModified": "2025-09-01T16:23:39.337305Z"
     },
     {
       "id": "project-d12b10e4",
@@ -42,8 +102,13 @@
       "title": "Casa Com Iluminação",
       "status": "active",
       "featured": false,
-      "category": [],
-      "lastModified": "2025-08-31T18:47:27.670373Z"
+      "category": [
+        {
+          "0": "Maquete",
+          "1": "LED"
+        }
+      ],
+      "lastModified": "2025-09-01T16:23:39.337305Z"
     },
     {
       "id": "project-7b469eeb",
@@ -59,7 +124,7 @@
           "3": "Modelagem 3d"
         }
       ],
-      "lastModified": "2025-08-31T18:47:27.671946Z"
+      "lastModified": "2025-09-01T16:23:39.347591Z"
     },
     {
       "id": "project-6d285ce4",
@@ -75,7 +140,7 @@
           "3": "Modelagem 3d"
         }
       ],
-      "lastModified": "2025-08-31T18:47:27.672648Z"
+      "lastModified": "2025-09-01T16:23:39.347591Z"
     },
     {
       "id": "project-d9c888c0",
@@ -83,8 +148,13 @@
       "title": "F15 Tema Textura Do Starscream",
       "status": "active",
       "featured": false,
-      "category": [],
-      "lastModified": "2025-08-31T18:47:27.675043Z"
+      "category": [
+        {
+          "0": "CNC laser",
+          "1": "Pintura"
+        }
+      ],
+      "lastModified": "2025-09-01T16:23:39.349607Z"
     },
     {
       "id": "project-b7186599",
@@ -93,7 +163,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T18:47:27.676799Z"
+      "lastModified": "2025-09-01T16:23:39.349607Z"
     },
     {
       "id": "project-8b1ae6ff",
@@ -104,7 +174,7 @@
       "category": [
         {}
       ],
-      "lastModified": "2025-08-31T18:47:27.677825Z"
+      "lastModified": "2025-09-01T16:23:39.352933Z"
     },
     {
       "id": "project-f6fff6ce",
@@ -113,9 +183,13 @@
       "status": "active",
       "featured": false,
       "category": [
-        {}
+        {
+          "0": "Scratch",
+          "1": "Musica",
+          "2": "Makey Makey"
+        }
       ],
-      "lastModified": "2025-08-31T18:47:27.678823Z"
+      "lastModified": "2025-09-01T16:23:39.353947Z"
     },
     {
       "id": "project-52bf09c9",
@@ -129,7 +203,7 @@
           "1": "Papelão"
         }
       ],
-      "lastModified": "2025-08-31T18:47:27.680819Z"
+      "lastModified": "2025-09-01T16:23:39.354949Z"
     },
     {
       "id": "project-5eb32f7b",
@@ -138,7 +212,7 @@
       "status": "active",
       "featured": false,
       "category": [],
-      "lastModified": "2025-08-31T18:47:27.681901Z"
+      "lastModified": "2025-09-01T16:23:39.355978Z"
     },
     {
       "id": "project-b5e08fe4",
@@ -146,8 +220,13 @@
       "title": "Natureza Com Coleta Seletiva",
       "status": "active",
       "featured": false,
-      "category": [],
-      "lastModified": "2025-08-31T18:47:27.683919Z"
+      "category": [
+        {
+          "0": "Meio Ambiente",
+          "1": "Maquete"
+        }
+      ],
+      "lastModified": "2025-09-01T16:23:39.356954Z"
     },
     {
       "id": "project-8c3b0d1a",
@@ -156,9 +235,12 @@
       "status": "active",
       "featured": false,
       "category": [
-        {}
+        {
+          "0": "Game",
+          "1": "Scratch"
+        }
       ],
-      "lastModified": "2025-08-31T18:47:27.684919Z"
+      "lastModified": "2025-09-01T16:23:39.357966Z"
     },
     {
       "id": "project-cd0e2ae8",
@@ -167,9 +249,13 @@
       "status": "active",
       "featured": false,
       "category": [
-        {}
+        {
+          "0": "Scratch",
+          "1": "Musica",
+          "2": "Makey Makey"
+        }
       ],
-      "lastModified": "2025-08-31T18:47:27.686110Z"
+      "lastModified": "2025-09-01T16:23:39.358780Z"
     },
     {
       "id": "project-1a951d04",
@@ -181,10 +267,20 @@
         {
           "0": "Makey Makey",
           "1": "Scratch",
-          "2": "Carrinhos"
+          "2": "Carrinhos",
+          "3": "Scratch"
         }
       ],
-      "lastModified": "2025-08-31T18:47:27.687161Z"
+      "lastModified": "2025-09-01T16:23:39.359197Z"
+    },
+    {
+      "id": "project-11a778a8",
+      "slug": "projetos-em-impressora-3d",
+      "title": "Projetos Em Impressora 3D",
+      "status": "active",
+      "featured": false,
+      "category": [],
+      "lastModified": "2025-09-01T16:23:39.360257Z"
     }
   ]
 }

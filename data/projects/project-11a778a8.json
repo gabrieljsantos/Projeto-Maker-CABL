@@ -1,0 +1,86 @@
+{
+  "id": "project-11a778a8",
+  "title": "Projetos Em Impressora 3D",
+  "slug": "projetos-em-impressora-3d",
+  "description": "Foram desenvolvidos modelos tridimensionais no computador e, em seguida, produzidos em impressora 3D. Os alunos puderam criar peças personalizadas, explorar diferentes formas e testar na prática como o design digital pode se transformar em objetos reais e funcionais.",
+  "category": [
+    {}
+  ],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-09-01T16:23:39.360257Z",
+    "lastModified": "2025-09-01T16:23:39.360257Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Projetos em Impressora 3D/few4fgergve.png",
+      "alt": "Imagem do projeto - 1",
+      "caption": "Imagem do projeto",
+      "order": 1
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Projetos em Impressora 3D/Fowewfecdsto.png",
+      "alt": "Imagem do projeto - 2",
+      "caption": "Imagem do projeto",
+      "order": 2
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Projetos em Impressora 3D/IMG_20230503_105115861.MP.jpg",
+      "alt": "Imagem do projeto - 3",
+      "caption": "Imagem do projeto",
+      "order": 3
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Projetos em Impressora 3D/IMG_20230503_134030831.MP.jpg",
+      "alt": "Imagem do projeto - 4",
+      "caption": "Imagem do projeto",
+      "order": 4
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Projetos em Impressora 3D/IMG_20230518_105602148.MP.jpg",
+      "alt": "Imagem do projeto - 5",
+      "caption": "Imagem do projeto",
+      "order": 5
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Projetos em Impressora 3D/IMG_20230518_132923815.MP.jpg",
+      "alt": "Imagem do projeto - 6",
+      "caption": "Imagem do projeto",
+      "order": 6
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Projetos em Impressora 3D/IMG_20230518_133134982.MP.jpg",
+      "alt": "Imagem do projeto - 7",
+      "caption": "Imagem do projeto",
+      "order": 7
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Projetos em Impressora 3D/IMG_20230518_161637174.MP.jpg",
+      "alt": "Imagem do projeto - 8",
+      "caption": "Imagem do projeto",
+      "order": 8
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Projetos em Impressora 3D/IMG_20230518_161644271.MP.jpg",
+      "alt": "Imagem do projeto - 9",
+      "caption": "Imagem do projeto",
+      "order": 9
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

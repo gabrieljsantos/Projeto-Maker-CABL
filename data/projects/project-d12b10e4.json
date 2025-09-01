@@ -13,22 +13,22 @@
   "featured": false,
   "dates": {
     "created": "2025-08-31T18:35:22.577067Z",
-    "lastModified": "2025-08-31T18:47:27.670373Z"
+    "lastModified": "2025-09-01T16:23:39.337305Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/Casa com Iluminação/IMG_20240927_134334999.MP.jpg",
-      "alt": "Imagem do projeto - 3",
+      "alt": "Imagem do projeto - 11",
       "caption": "Imagem do projeto",
-      "order": 3
+      "order": 11
     },
     {
       "type": "image",
       "url": "assets/projects/Casa com Iluminação/IMG_20240927_134347612.MP.jpg",
-      "alt": "Imagem do projeto - 4",
+      "alt": "Imagem do projeto - 12",
       "caption": "Imagem do projeto",
-      "order": 4
+      "order": 12
     }
   ],
   "links": [],

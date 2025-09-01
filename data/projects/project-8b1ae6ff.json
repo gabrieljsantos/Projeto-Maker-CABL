@@ -7,18 +7,18 @@
     {}
   ],
   "status": "active",
-  "featured": true,
+  "featured": false,
   "dates": {
     "created": "2025-08-31T18:35:22.596486Z",
-    "lastModified": "2025-08-31T18:47:27.677825Z"
+    "lastModified": "2025-09-01T16:23:39.352933Z"
   },
   "media": [
     {
       "type": "image",
       "url": "assets/projects/Gato Articulado/cat.gif",
-      "alt": "Imagem do projeto - 2",
+      "alt": "Imagem do projeto - 6",
       "caption": "Imagem do projeto",
-      "order": 2
+      "order": 6
     }
   ],
   "links": [],

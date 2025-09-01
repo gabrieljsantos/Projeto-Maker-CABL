@@ -1,0 +1,33 @@
+{
+  "id": "project-95e22082",
+  "title": "Barata Eletronica",
+  "slug": "barata-eletronica",
+  "description": "Neste projeto, foi utilizado um motor DC 130 com caixa de redução (comum em kits de Arduino). A partir dele, foi conectada uma haste de forma estratégica, possibilitando que o mecanismo gerasse um movimento de balanço e deslocamento. O resultado é um inseto/animal robótico em 2D que se movimenta de forma semelhante a um brinquedo autômato, simulando vida através de um sistema simples de transmissão mecânica.",
+  "category": [
+    {
+      "0": "Movimento",
+      "1": "Arte"
+    }
+  ],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-09-01T15:53:16.675425Z",
+    "lastModified": "2025-09-01T16:23:39.337305Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Barata eletronica/VID_20241122_140129517.LS.gif",
+      "alt": "Imagem do projeto - 4",
+      "caption": "Imagem do projeto",
+      "order": 4
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "project-8e18d720",
+  "title": "Avião Tubarão",
+  "slug": "avião-tubarão",
+  "description": "Projeto híbrido feito de papelão, combinando características de um avião e de um tubarão em um único modelo criativo. Neste trabalho, a proposta permitiu que a imaginação extrapolasse a realidade, deixando a criatividade fluir livremente para dar forma a uma criação fantástica.",
+  "category": [
+    {
+      "0": "Arte"
+    }
+  ],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-09-01T16:12:04.664794Z",
+    "lastModified": "2025-09-01T16:23:39.337305Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Avião Tubarão/IMG_20240809_161612285.MP.jpg",
+      "alt": "Imagem do projeto - 5",
+      "caption": "Imagem do projeto",
+      "order": 5
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Avião Tubarão/IMG_20240809_161620476.MP.jpg",
+      "alt": "Imagem do projeto - 6",
+      "caption": "Imagem do projeto",
+      "order": 6
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Avião Tubarão/IMG_20240809_161641292.MP.jpg",
+      "alt": "Imagem do projeto - 7",
+      "caption": "Imagem do projeto",
+      "order": 7
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Avião Tubarão/IMG_20240809_161916052.MP.jpg",
+      "alt": "Imagem do projeto - 8",
+      "caption": "Imagem do projeto",
+      "order": 8
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}

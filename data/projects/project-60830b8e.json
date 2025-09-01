@@ -1,0 +1,48 @@
+{
+  "id": "project-60830b8e",
+  "title": "Bateria Eletrônica",
+  "slug": "bateria-eletrônica",
+  "description": "Foi construída uma bateria utilizando o kit Makey Makey e o Scratch. Cada entrada foi ligada a circunferências de papelão revestidas com papel alumínio, que funcionaram como pads. O fio GND foi conectado às baquetas, de forma que, ao bater nos pads, o circuito se fechava e o Scratch reproduzia os sons de bateria. ",
+  "category": [
+    {
+      "0": "Scratch",
+      "1": "Musica",
+      "2": "Makey Makey"
+    }
+  ],
+  "status": "active",
+  "featured": false,
+  "dates": {
+    "created": "2025-09-01T16:05:57.706797Z",
+    "lastModified": "2025-09-01T16:23:39.337305Z"
+  },
+  "media": [
+    {
+      "type": "image",
+      "url": "assets/projects/Bateria Eletrônica/1.jpg",
+      "alt": "Imagem do projeto - 7",
+      "caption": "Imagem do projeto",
+      "order": 7
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Bateria Eletrônica/2.jpg",
+      "alt": "Imagem do projeto - 8",
+      "caption": "Imagem do projeto",
+      "order": 8
+    },
+    {
+      "type": "image",
+      "url": "assets/projects/Bateria Eletrônica/3.jpg",
+      "alt": "Imagem do projeto - 9",
+      "caption": "Imagem do projeto",
+      "order": 9
+    }
+  ],
+  "links": [],
+  "metrics": {
+    "views": 0,
+    "likes": 0,
+    "shares": 0
+  }
+}
