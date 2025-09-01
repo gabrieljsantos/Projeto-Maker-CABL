@@ -2,15 +2,16 @@
   "id": "project-acf7e043",
   "title": "Bunny Race",
   "slug": "bunny-race",
-  "description": "",
+  "description": "Neste jogo inspirado no clássico Pac-Man, você controla um coelho que deve coletar cenouras espalhadas pelo mapa enquanto foge de lobos famintos. O diferencial deste projeto está no desenvolvimento detalhado dos sprites, criando uma experiência visual agradável e personalizada para cada personagem.\nRegras do Jogo:\nUse as setas do teclado para mover o coelho pelo labirinto.\nColete todas as cenouras para completar o jogo.\nOs lobos perseguem o coelho, mas sofrem os mesmos efeitos que os inimigos no Pac-Man.\nQuando certas condições são ativadas (por exemplo, o coelho pega uma cenoura especial), os lobos entram em modo vulnerável e podem ser “coletados” temporariamente para ganhar pontos extras.\nPara vencer o jogo, você deve coletar todas as cenouras no mapa. Não é necessário capturar os lobos em modo vulnerável para completar o jogo.",
   "category": [
     {
       "0": "Game",
-      "1": "Scratch"
+      "1": "Scratch",
+      "2": "Arte"
     }
   ],
   "status": "active",
-  "featured": false,
+  "featured": true,
   "dates": {
     "created": "2025-08-31T18:47:27.666254Z",
     "lastModified": "2025-08-31T18:47:27.666254Z"
@@ -31,10 +32,12 @@
       "order": 2
     }
   ],
-  "links": [    {
+  "links": [
+    {
       "name": "Veja o jogo no Scratch",
       "url": "https://scratch.mit.edu/projects/1034532771"
-    }],
+    }
+  ],
   "metrics": {
     "views": 0,
     "likes": 0,
