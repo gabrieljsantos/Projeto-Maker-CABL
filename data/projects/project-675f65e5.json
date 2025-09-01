@@ -2,8 +2,12 @@
   "id": "project-675f65e5",
   "title": "Carro De Corrida",
   "slug": "carro_de_corrida",
-  "description": "",
-  "category": [],
+  "description": "Neste projeto, os alunos desenharam o carro em papelão usando caneta e recortaram as partes cuidadosamente. Em seguida, foram inseridos eixos com palitinhos para permitir que os pneus se movessem livremente. O carro é capaz de se locomover quando recebe um impulso ou força aplicada manualmente, simulando o movimento de um carro de corrida.",
+  "category": [
+    {
+      "0": "Carrinhos"
+    }
+  ],
   "status": "active",
   "featured": false,
   "dates": {
